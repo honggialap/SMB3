@@ -5,6 +5,7 @@
 #pragma region INCLUDE
 #include "Application.h"
 #include "Time.h"
+#include "Graphics.h"
 #pragma endregion
 
 namespace Engine
@@ -15,12 +16,14 @@ namespace Engine
 	private:
 		pApplication _application = nullptr;
 		pTime _time = nullptr;
+		pGraphics _graphics = nullptr;
 
 		float _frameRate = 0.0f;
 
 	public:
 		pApplication GetApplication() { return _application; }
 		pTime GetTime() { return _time; }
+		pGraphics GetGraphics() { return _graphics; }
 
 		Game();
 		~Game();
@@ -29,7 +32,7 @@ namespace Engine
 			HINSTANCE hInstance,
 			std::string sourcePath
 		);
-		void Load(
+		bool Load(
 			HINSTANCE hInstance,
 			std::string sourcePath
 		);
@@ -37,6 +40,7 @@ namespace Engine
 		void Render();
 		void Shutdown();
 	};
+	typedef Game* pGame;
 
 }
 

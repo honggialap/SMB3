@@ -10,10 +10,14 @@ namespace Engine
 	{
 		_application = new Application();
 		_time = new Time();
+		_graphics = new Graphics();
 	}
 
 	Game::~Game()
 	{
+		delete _graphics;
+		_graphics = nullptr;
+
 		delete _time;
 		_time = nullptr;
 
@@ -26,7 +30,11 @@ namespace Engine
 		std::string sourcePath
 	)
 	{
-		Load(hInstance, sourcePath);
+		if (!Load(hInstance, sourcePath))
+		{
+			Shutdown();
+			return;
+		}
 
 		_time->StartClock();
 		float msPerFrame = 1000.0f / _frameRate;
@@ -55,18 +63,20 @@ namespace Engine
 		Shutdown();
 	}
 
-	void Game::Load(
+	bool Game::Load(
 		HINSTANCE hInstance,
 		std::string sourcePath
 	)
 	{
+		bool result;
+
 		pugi::xml_document gameData;
 		gameData.load_file(sourcePath.c_str());
 
 		auto gameSettings = gameData.child("GameData").child("GameSettings");
 		_frameRate = gameSettings.attribute("frameRate").as_float();
 
-		_application->CreateGameWindow(
+		result = _application->CreateGameWindow(
 			hInstance,
 			std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(
 				gameSettings.attribute("title").as_string()
@@ -74,6 +84,20 @@ namespace Engine
 			gameSettings.attribute("resolutionWidth").as_uint(),
 			gameSettings.attribute("resolutionHeight").as_uint()
 		);
+		if (!result)
+		{
+			return false;
+		}
+
+		result = _graphics->Initialize(
+			_application->GetWindow()
+		);
+		if (!result)
+		{
+			return false;
+		}
+
+		return true;
 	}
 
 	void Game::Update(float elapsedMs)
@@ -86,6 +110,7 @@ namespace Engine
 
 	void Game::Shutdown()
 	{
+		_graphics->Shutdown();
 	}
 
 }
