@@ -9,6 +9,7 @@
 
 namespace Engine
 {
+
 	class Game
 	{
 	private:
@@ -25,10 +26,12 @@ namespace Engine
 		~Game();
 
 		void Run(
-			HINSTANCE hInstance
+			HINSTANCE hInstance,
+			std::string sourcePath
 		);
 		void Load(
-			HINSTANCE hInstance
+			HINSTANCE hInstance,
+			std::string sourcePath
 		);
 		void Update(float elapsedMs);
 		void Render();

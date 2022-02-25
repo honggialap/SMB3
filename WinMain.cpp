@@ -9,7 +9,7 @@ int WINAPI WinMain(
 {
 	auto game = new Engine::Game();
 
-	game->Run(hInstance);
+	game->Run(hInstance, "Data/GameData.xml");
 
 	delete game;
 	game = nullptr;

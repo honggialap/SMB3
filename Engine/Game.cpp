@@ -1,5 +1,8 @@
 #pragma region INCLUDE
 #include "Game.h"
+#include "pugixml.hpp"
+#include <codecvt>
+#include <locale>
 #pragma endregion
 
 namespace Engine
@@ -20,9 +23,12 @@ namespace Engine
 		_application = nullptr;
 	}
 
-	void Game::Run(HINSTANCE hInstance)
+	void Game::Run(
+		HINSTANCE hInstance,
+		std::string sourcePath
+	)
 	{
-		Load(hInstance);
+		Load(hInstance, sourcePath);
 
 		_time->StartClock();
 		float msPerFrame = 1000.0f / _frameRate;
@@ -51,20 +57,24 @@ namespace Engine
 		Shutdown();
 	}
 
-	void Game::Load(HINSTANCE hInstance)
+	void Game::Load(
+		HINSTANCE hInstance,
+		std::string sourcePath
+	)
 	{
-		//temporary
-		std::wstring windowTitle = L"Game test";
-		unsigned int windowWidth = 800;
-		unsigned int windowHeight = 600;
-		_frameRate = 120.0f;
-		//
+		pugi::xml_document gameData;
+		gameData.load_file(sourcePath.c_str());
+
+		auto gameSettings = gameData.child("GameData").child("GameSettings");
+		_frameRate = gameSettings.attribute("frameRate").as_float();
 
 		_application->CreateGameWindow(
 			hInstance,
-			windowTitle,
-			windowWidth,
-			windowHeight
+			std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(
+				gameSettings.attribute("title").as_string()
+			),
+			gameSettings.attribute("resolutionWidth").as_uint(),
+			gameSettings.attribute("resolutionHeight").as_uint()
 		);
 	}
 

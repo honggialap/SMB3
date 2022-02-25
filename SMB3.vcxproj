@@ -143,16 +143,22 @@
   <ItemGroup>
     <ClCompile Include="Engine\Application.cpp" />
     <ClCompile Include="Engine\Game.cpp" />
+    <ClCompile Include="Engine\pugixml.cpp" />
     <ClCompile Include="Engine\Time.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Application.h" />
     <ClInclude Include="Engine\Game.h" />
+    <ClInclude Include="Engine\pugiconfig.hpp" />
+    <ClInclude Include="Engine\pugixml.hpp" />
     <ClInclude Include="Engine\Time.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Data\GameData.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

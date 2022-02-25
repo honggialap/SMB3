@@ -1,0 +1,10 @@
+<GameData>
+  
+  <GameSettings
+    title ="Config test"
+    resolutionWidth ="512"
+    resolutionHeight ="480"
+    frameRate ="120.0"
+    />
+
+</GameData>

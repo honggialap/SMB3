@@ -27,6 +27,9 @@
     <ClCompile Include="Engine\Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Engine\pugixml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Application.h">
@@ -38,8 +41,17 @@
     <ClInclude Include="Engine\Game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Engine\pugiconfig.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\pugixml.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Data\GameData.xml" />
   </ItemGroup>
 </Project>
