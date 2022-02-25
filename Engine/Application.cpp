@@ -1,5 +1,6 @@
 #pragma region INCLUDE
 #include "Application.h"
+#include "Ultilities.h"
 #pragma endregion
 
 namespace Engine
@@ -29,6 +30,7 @@ namespace Engine
 
 		if (!_hWnd)
 		{
+			DebugOut(L"[Engine] Create game window failed.\n");
 			return false;
 		}
 		else
@@ -37,6 +39,7 @@ namespace Engine
 			ShowWindow(_hWnd, SW_SHOWNORMAL);
 			UpdateWindow(_hWnd);
 
+			DebugOut(L"[Engine] Create game window successed with %d by %d pixels resolution.\n", width, height);
 			return true;
 		}
 	}

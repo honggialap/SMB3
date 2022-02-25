@@ -145,6 +145,7 @@
     <ClCompile Include="Engine\Game.cpp" />
     <ClCompile Include="Engine\pugixml.cpp" />
     <ClCompile Include="Engine\Time.cpp" />
+    <ClCompile Include="Engine\Ultilities.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +154,7 @@
     <ClInclude Include="Engine\pugiconfig.hpp" />
     <ClInclude Include="Engine\pugixml.hpp" />
     <ClInclude Include="Engine\Time.h" />
+    <ClInclude Include="Engine\Ultilities.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
