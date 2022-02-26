@@ -11,10 +11,14 @@ namespace Engine
 		_application = new Application();
 		_time = new Time();
 		_graphics = new Graphics();
+		_textures = new Textures(_graphics);
 	}
 
 	Game::~Game()
 	{
+		delete _textures;
+		_textures = nullptr;
+
 		delete _graphics;
 		_graphics = nullptr;
 
@@ -59,7 +63,7 @@ namespace Engine
 
 			done = _application->HandleMessage();
 		}
-		
+
 		Shutdown();
 	}
 
@@ -97,6 +101,20 @@ namespace Engine
 			return false;
 		}
 
+		for (
+			auto texture = gameData.child("GameData").child("Texture");
+			texture;
+			texture = texture.next_sibling("Texture")
+			)
+		{
+			_textures->Load(
+				texture.attribute("id").as_uint(),
+				std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(
+					texture.attribute("source").as_string()
+				)
+			);
+		}
+
 		return true;
 	}
 
@@ -110,6 +128,7 @@ namespace Engine
 
 	void Game::Shutdown()
 	{
+		_textures->Clean();
 		_graphics->Shutdown();
 	}
 

@@ -6,5 +6,7 @@
     resolutionHeight ="480"
     frameRate ="120.0"
     />
+  
+  <Texture id="1" source ="Data/Texture/Brick.png"/>
 
 </GameData>

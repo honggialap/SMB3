@@ -72,4 +72,9 @@
   <ItemGroup>
     <Xml Include="Data\GameData.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="Data\Texture\brick.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
 </Project>

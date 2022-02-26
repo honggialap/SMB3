@@ -39,7 +39,9 @@ namespace Engine
 		void Shutdown();
 
 	private:
-		bool CreateSwapChain(HWND hWnd);
+		bool CreateSwapChain(
+			HWND hWnd
+		);
 		bool CreateRenderTargetView();
 		bool CreateSpriteHandler();
 		bool CreateBlendState();

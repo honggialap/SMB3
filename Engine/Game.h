@@ -6,6 +6,7 @@
 #include "Application.h"
 #include "Time.h"
 #include "Graphics.h"
+#include "Texture.h"
 #pragma endregion
 
 namespace Engine
@@ -17,6 +18,7 @@ namespace Engine
 		pApplication _application = nullptr;
 		pTime _time = nullptr;
 		pGraphics _graphics = nullptr;
+		pTextures _textures = nullptr;
 
 		float _frameRate = 0.0f;
 
@@ -24,6 +26,7 @@ namespace Engine
 		pApplication GetApplication() { return _application; }
 		pTime GetTime() { return _time; }
 		pGraphics GetGraphics() { return _graphics; }
+		pTextures GetTextures() { return _textures; }
 
 		Game();
 		~Game();
