@@ -12,10 +12,18 @@ namespace Engine
 		_time = new Time();
 		_graphics = new Graphics();
 		_textures = new Textures(_graphics);
+		_input = new Input();
+		_player = new Player();
 	}
 
 	Game::~Game()
 	{
+		delete _player;
+		_player = nullptr;
+
+		delete _input;
+		_input = nullptr;
+
 		delete _textures;
 		_textures = nullptr;
 
@@ -52,6 +60,7 @@ namespace Engine
 
 			if (elapsedMs >= msPerFrame)
 			{
+				_input->ProcessKeyboard();
 				Update(elapsedMs);
 				Render();
 				elapsedMs = 0.0f;
@@ -101,6 +110,16 @@ namespace Engine
 			return false;
 		}
 
+		result = _input->Initialize(
+			_application->GetInstance(),
+			_application->GetWindow(),
+			_player
+		);
+		if (!result)
+		{
+			return false;
+		}
+
 		for (
 			auto texture = gameData.child("GameData").child("Texture");
 			texture;
@@ -128,6 +147,7 @@ namespace Engine
 
 	void Game::Shutdown()
 	{
+		_input->Shutdown();
 		_textures->Clean();
 		_graphics->Shutdown();
 	}

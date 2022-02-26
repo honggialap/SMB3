@@ -7,6 +7,8 @@
 #include "Time.h"
 #include "Graphics.h"
 #include "Texture.h"
+#include "Input.h"
+#include "Player.h"
 #pragma endregion
 
 namespace Engine
@@ -19,6 +21,8 @@ namespace Engine
 		pTime _time = nullptr;
 		pGraphics _graphics = nullptr;
 		pTextures _textures = nullptr;
+		pInput _input = nullptr;
+		pPlayer _player = nullptr;
 
 		float _frameRate = 0.0f;
 
@@ -27,6 +31,8 @@ namespace Engine
 		pTime GetTime() { return _time; }
 		pGraphics GetGraphics() { return _graphics; }
 		pTextures GetTextures() { return _textures; }
+		pInput GetInput() { return _input; }
+		pPlayer GetPlayer() { return _player; }
 
 		Game();
 		~Game();

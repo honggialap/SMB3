@@ -144,6 +144,8 @@
     <ClCompile Include="Engine\Application.cpp" />
     <ClCompile Include="Engine\Game.cpp" />
     <ClCompile Include="Engine\Graphics.cpp" />
+    <ClCompile Include="Engine\Input.cpp" />
+    <ClCompile Include="Engine\Player.cpp" />
     <ClCompile Include="Engine\pugixml.cpp" />
     <ClCompile Include="Engine\Texture.cpp" />
     <ClCompile Include="Engine\Time.cpp" />
@@ -154,6 +156,8 @@
     <ClInclude Include="Engine\Application.h" />
     <ClInclude Include="Engine\Game.h" />
     <ClInclude Include="Engine\Graphics.h" />
+    <ClInclude Include="Engine\Input.h" />
+    <ClInclude Include="Engine\Player.h" />
     <ClInclude Include="Engine\pugiconfig.hpp" />
     <ClInclude Include="Engine\pugixml.hpp" />
     <ClInclude Include="Engine\Texture.h" />
