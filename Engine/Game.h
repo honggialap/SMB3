@@ -7,6 +7,8 @@
 #include "Time.h"
 #include "Graphics.h"
 #include "Texture.h"
+#include "Audio.h"
+#include "Sound.h"
 #include "Input.h"
 #include "Player.h"
 #pragma endregion
@@ -21,6 +23,8 @@ namespace Engine
 		pTime _time = nullptr;
 		pGraphics _graphics = nullptr;
 		pTextures _textures = nullptr;
+		pAudio _audio = nullptr;
+		pSounds _sounds = nullptr;
 		pInput _input = nullptr;
 		pPlayer _player = nullptr;
 
@@ -31,6 +35,8 @@ namespace Engine
 		pTime GetTime() { return _time; }
 		pGraphics GetGraphics() { return _graphics; }
 		pTextures GetTextures() { return _textures; }
+		pAudio GetAudio() { return _audio; }
+		pSounds GetSounds() { return _sounds; }
 		pInput GetInput() { return _input; }
 		pPlayer GetPlayer() { return _player; }
 

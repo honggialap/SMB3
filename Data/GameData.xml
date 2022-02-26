@@ -1,7 +1,7 @@
 <GameData>
   
   <GameSettings
-    title ="Graphics and Input test"
+    title ="Graphics - Input - Audio test"
     resolutionWidth ="512"
     resolutionHeight ="480"
     frameRate ="120.0"

@@ -12,6 +12,8 @@ namespace Engine
 		_time = new Time();
 		_graphics = new Graphics();
 		_textures = new Textures(_graphics);
+		_audio = new Audio();
+		_sounds = new Sounds(_audio);
 		_input = new Input();
 		_player = new Player();
 	}
@@ -23,6 +25,12 @@ namespace Engine
 
 		delete _input;
 		_input = nullptr;
+
+		delete _sounds;
+		_sounds = nullptr;
+
+		delete _audio;
+		_audio = nullptr;
 
 		delete _textures;
 		_textures = nullptr;
@@ -110,6 +118,14 @@ namespace Engine
 			return false;
 		}
 
+		result = _audio->Initialize(
+			_application->GetWindow()
+		);
+		if (!result)
+		{
+			return false;
+		}
+
 		result = _input->Initialize(
 			_application->GetInstance(),
 			_application->GetWindow(),
@@ -132,6 +148,18 @@ namespace Engine
 					texture.attribute("source").as_string()
 				)
 			);
+		}		
+
+		for (
+			auto sound = gameData.child("GameData").child("Sound");
+			sound;
+			sound = sound.next_sibling("Sound")
+			)
+		{
+			_sounds->Load(
+				sound.attribute("id").as_uint(),
+				sound.attribute("source").as_string()
+			);
 		}
 
 		return true;
@@ -148,6 +176,8 @@ namespace Engine
 	void Game::Shutdown()
 	{
 		_input->Shutdown();
+		_sounds->Clean();
+		_audio->Shutdown();
 		_textures->Clean();
 		_graphics->Shutdown();
 	}
