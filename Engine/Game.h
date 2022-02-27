@@ -11,6 +11,9 @@
 #include "Sound.h"
 #include "Input.h"
 #include "Player.h"
+#include "Grid.h"
+#include "Scene.h"
+#include "GameObject.h"
 #pragma endregion
 
 namespace Engine
@@ -27,6 +30,9 @@ namespace Engine
 		pSounds _sounds = nullptr;
 		pInput _input = nullptr;
 		pPlayer _player = nullptr;
+		pGrid _grid = nullptr;
+		pScenes _scenes = nullptr;
+		pGameObjects _gameObjects = nullptr;
 
 		float _frameRate = 0.0f;
 
@@ -39,6 +45,9 @@ namespace Engine
 		pSounds GetSounds() { return _sounds; }
 		pInput GetInput() { return _input; }
 		pPlayer GetPlayer() { return _player; }
+		pGrid GetGrid() { return _grid; }
+		pScenes GetScenes() { return _scenes; }
+		pGameObjects GetGameObjects() { return _gameObjects; }
 
 		Game();
 		~Game();

@@ -16,10 +16,22 @@ namespace Engine
 		_sounds = new Sounds(_audio);
 		_input = new Input();
 		_player = new Player();
+		_grid = new Grid();
+		_scenes = new Scenes();
+		_gameObjects = new GameObjects();
 	}
 
 	Game::~Game()
 	{
+		delete _gameObjects;
+		_gameObjects = nullptr;
+	
+		delete _scenes;
+		_scenes = nullptr;
+
+		delete _grid;
+		_grid = nullptr;
+		
 		delete _player;
 		_player = nullptr;
 
