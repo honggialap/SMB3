@@ -141,44 +141,60 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Engine\Application.cpp" />
-    <ClCompile Include="Engine\Audio.cpp" />
-    <ClCompile Include="Engine\Game.cpp" />
-    <ClCompile Include="Engine\GameObject.cpp" />
-    <ClCompile Include="Engine\Graphics.cpp" />
-    <ClCompile Include="Engine\Grid.cpp" />
-    <ClCompile Include="Engine\Input.cpp" />
-    <ClCompile Include="Engine\Player.cpp" />
-    <ClCompile Include="Engine\pugixml.cpp" />
-    <ClCompile Include="Engine\Scene.cpp" />
-    <ClCompile Include="Engine\Sound.cpp" />
-    <ClCompile Include="Engine\Texture.cpp" />
-    <ClCompile Include="Engine\Time.cpp" />
-    <ClCompile Include="Engine\Ultilities.cpp" />
+    <ClCompile Include="Model\Engine\Animation.cpp" />
+    <ClCompile Include="Model\Engine\Application.cpp" />
+    <ClCompile Include="Model\Engine\Audio.cpp" />
+    <ClCompile Include="Model\Engine\AudioSource.cpp" />
+    <ClCompile Include="Model\Engine\Collision.cpp" />
+    <ClCompile Include="Model\Engine\Game.cpp" />
+    <ClCompile Include="Model\Engine\GameObject.cpp" />
+    <ClCompile Include="Model\Engine\Graphics.cpp" />
+    <ClCompile Include="Model\Engine\Input.cpp" />
+    <ClCompile Include="Model\Engine\pugixml.cpp" />
+    <ClCompile Include="Model\Engine\Sprite.cpp" />
+    <ClCompile Include="Model\Engine\Time.cpp" />
+    <ClCompile Include="Model\Engine\Ultilities.cpp" />
+    <ClCompile Include="Model\GameMaster.cpp" />
+    <ClCompile Include="Model\SMB3.cpp" />
+    <ClCompile Include="Model\World\Goomba.cpp" />
+    <ClCompile Include="Model\World\Koopa.cpp" />
+    <ClCompile Include="Model\World\Mario.cpp" />
+    <ClCompile Include="Model\World\Platform.cpp" />
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Engine\Application.h" />
-    <ClInclude Include="Engine\Audio.h" />
-    <ClInclude Include="Engine\Game.h" />
-    <ClInclude Include="Engine\GameObject.h" />
-    <ClInclude Include="Engine\Graphics.h" />
-    <ClInclude Include="Engine\Grid.h" />
-    <ClInclude Include="Engine\Input.h" />
-    <ClInclude Include="Engine\Player.h" />
-    <ClInclude Include="Engine\pugiconfig.hpp" />
-    <ClInclude Include="Engine\pugixml.hpp" />
-    <ClInclude Include="Engine\Scene.h" />
-    <ClInclude Include="Engine\Sound.h" />
-    <ClInclude Include="Engine\Texture.h" />
-    <ClInclude Include="Engine\Time.h" />
-    <ClInclude Include="Engine\Ultilities.h" />
+    <ClInclude Include="Model\Engine\Animation.h" />
+    <ClInclude Include="Model\Engine\Application.h" />
+    <ClInclude Include="Model\Engine\Audio.h" />
+    <ClInclude Include="Model\Engine\AudioSource.h" />
+    <ClInclude Include="Model\Engine\Collision.h" />
+    <ClInclude Include="Model\Engine\Game.h" />
+    <ClInclude Include="Model\Engine\GameObject.h" />
+    <ClInclude Include="Model\Engine\Graphics.h" />
+    <ClInclude Include="Model\Engine\Input.h" />
+    <ClInclude Include="Model\Engine\pugiconfig.hpp" />
+    <ClInclude Include="Model\Engine\pugixml.hpp" />
+    <ClInclude Include="Model\Engine\Sprite.h" />
+    <ClInclude Include="Model\Engine\Time.h" />
+    <ClInclude Include="Model\Engine\Ultilities.h" />
+    <ClInclude Include="Model\GameMaster.h" />
+    <ClInclude Include="Model\SMB3.h" />
+    <ClInclude Include="Model\World\Goomba.h" />
+    <ClInclude Include="Model\World\Koopa.h" />
+    <ClInclude Include="Model\World\Mario.h" />
+    <ClInclude Include="Model\World\Platform.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
     <None Include="packages.config" />
+    <None Include="workspace.code-workspace" />
   </ItemGroup>
   <ItemGroup>
     <Xml Include="Data\GameData.xml" />
+    <Xml Include="Data\Scene\IntroScene.xml" />
+    <Xml Include="Data\Scene\World11Scene.xml" />
+    <Xml Include="Data\Scene\WorldMapGrasslandScene.xml" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Data\Texture\brick.png" />

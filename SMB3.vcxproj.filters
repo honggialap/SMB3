@@ -1,122 +1,149 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{8e74553a-59c6-4ba6-a0fc-995b4bd946c3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Engine\Framework">
+      <UniqueIdentifier>{69497972-e634-4ea3-911e-5a3a6ba28b56}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
+    <Filter Include="Engine\Component">
+      <UniqueIdentifier>{2ccd6827-f136-4777-9158-4caf77fe1456}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Engine\Library">
+      <UniqueIdentifier>{8d0eb4dc-d885-4cd9-90ff-c4a9bd518c28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Resource">
+      <UniqueIdentifier>{4d23ee7e-2cc4-44f0-9ecd-f0efc40cdec7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="WinMain.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="WinMain.cpp" />
+    <ClCompile Include="Model\Engine\Animation.cpp">
+      <Filter>Engine\Component</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Application.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Model\Engine\AudioSource.cpp">
+      <Filter>Engine\Component</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Time.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Model\Engine\Collision.cpp">
+      <Filter>Engine\Component</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Game.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Model\Engine\Sprite.cpp">
+      <Filter>Engine\Component</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\pugixml.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Model\Engine\Application.cpp">
+      <Filter>Engine\Framework</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Ultilities.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Model\Engine\Audio.cpp">
+      <Filter>Engine\Framework</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Graphics.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Model\Engine\Graphics.cpp">
+      <Filter>Engine\Framework</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Texture.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Model\Engine\Input.cpp">
+      <Filter>Engine\Framework</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Input.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Model\Engine\Time.cpp">
+      <Filter>Engine\Framework</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Player.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Model\Engine\Ultilities.cpp">
+      <Filter>Engine\Library</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Audio.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Model\Engine\Game.cpp">
+      <Filter>Engine</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Sound.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Model\Engine\GameObject.cpp">
+      <Filter>Engine</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Scene.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Model\Engine\pugixml.cpp">
+      <Filter>Engine\Library</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\GameObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Engine\Grid.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClCompile Include="Model\SMB3.cpp" />
+    <ClCompile Include="Model\GameMaster.cpp" />
+    <ClCompile Include="Model\World\Mario.cpp" />
+    <ClCompile Include="Model\World\Platform.cpp" />
+    <ClCompile Include="Model\World\Goomba.cpp" />
+    <ClCompile Include="Model\World\Koopa.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Engine\Application.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Model\Engine\Animation.h">
+      <Filter>Engine\Component</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Time.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Model\Engine\Application.h">
+      <Filter>Engine\Framework</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Game.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Model\Engine\Audio.h">
+      <Filter>Engine\Framework</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\pugiconfig.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Model\Engine\AudioSource.h">
+      <Filter>Engine\Component</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\pugixml.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Model\Engine\Collision.h">
+      <Filter>Engine\Component</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Ultilities.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Model\Engine\Graphics.h">
+      <Filter>Engine\Framework</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Graphics.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Model\Engine\Input.h">
+      <Filter>Engine\Framework</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Texture.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Model\Engine\pugiconfig.hpp">
+      <Filter>Engine\Library</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Input.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Model\Engine\pugixml.hpp">
+      <Filter>Engine\Library</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Player.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Model\Engine\Ultilities.h">
+      <Filter>Engine\Library</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Audio.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Model\Engine\Sprite.h">
+      <Filter>Engine\Component</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Sound.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Model\Engine\Time.h">
+      <Filter>Engine\Framework</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Scene.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Model\Engine\Game.h">
+      <Filter>Engine</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\GameObject.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Model\Engine\GameObject.h">
+      <Filter>Engine</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Grid.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <ClInclude Include="Model\SMB3.h" />
+    <ClInclude Include="Model\GameMaster.h" />
+    <ClInclude Include="Model\World\Mario.h" />
+    <ClInclude Include="Model\World\Platform.h" />
+    <ClInclude Include="Model\World\Goomba.h" />
+    <ClInclude Include="Model\World\Koopa.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include=".gitignore">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include=".gitattributes">
+      <Filter>Resource</Filter>
+    </None>
+    <None Include="workspace.code-workspace">
+      <Filter>Resource</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Xml Include="Data\GameData.xml" />
+    <Xml Include="Data\GameData.xml">
+      <Filter>Resource</Filter>
+    </Xml>
+    <Xml Include="Data\Scene\WorldMapGrasslandScene.xml" />
+    <Xml Include="Data\Scene\World11Scene.xml" />
+    <Xml Include="Data\Scene\IntroScene.xml" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Data\Texture\brick.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Resource</Filter>
     </Image>
   </ItemGroup>
 </Project>
