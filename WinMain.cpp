@@ -7,7 +7,7 @@ int WINAPI WinMain(
 	_In_ int nCmdShow
 )
 {
-	auto game = new Engine::Game();
+	auto game = new Engine::CGame();
 
 	game->Run(hInstance, "Data/GameData.xml");
 

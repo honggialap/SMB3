@@ -3,7 +3,9 @@
 #include "Ultilities.h"
 #pragma endregion
 
-bool Input::Initialize(
+#pragma region DirectInput
+
+bool CInput::Initialize(
 	HINSTANCE hInstance, 
 	HWND hWnd, 
 	pKeyHandler keyHandler
@@ -67,7 +69,7 @@ bool Input::Initialize(
 	return true;
 }
 
-void Input::Shutdown() {
+void CInput::Shutdown() {
 	if (_device) {
 		_device->Unacquire();
 		_device->Release();
@@ -78,7 +80,7 @@ void Input::Shutdown() {
 	}
 }
 
-void Input::ProcessKeyboard() {
+void CInput::ProcessKeyboard() {
 	HRESULT result = _device->GetDeviceState(
 		sizeof(_keyStates),
 		_keyStates
@@ -113,3 +115,5 @@ void Input::ProcessKeyboard() {
 			_keyHandler->OnKeyUp(KeyCode);
 	}
 }
+
+#pragma endregion

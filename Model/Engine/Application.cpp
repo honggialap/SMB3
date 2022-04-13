@@ -3,7 +3,18 @@
 #include "Ultilities.h"
 #pragma endregion
 
-void Application::RegisterWindowClass(
+void CApplication::AdjustWindowSize(
+	HWND hWnd,
+	unsigned int width,
+	unsigned int height
+) {
+	DWORD dwStyle = GetWindowLongPtr(hWnd, GWL_STYLE);
+	DWORD dwExStyle = GetWindowLongPtr(hWnd, GWL_EXSTYLE);
+	RECT rect = { 0, 0, LONG(width), LONG(height) };
+	AdjustWindowRectEx(&rect, dwStyle, FALSE, dwExStyle);
+}
+
+void CApplication::RegisterWindowClass(
 	HINSTANCE hInstance
 ) {
 	WNDCLASSEX wcex = {};
@@ -23,18 +34,7 @@ void Application::RegisterWindowClass(
 	RegisterClassEx(&wcex);
 }
 
-void Application::AdjustWindowSize(
-	HWND hWnd,
-	unsigned int width,
-	unsigned int height
-) {
-	DWORD dwStyle = GetWindowLongPtr(hWnd, GWL_STYLE);
-	DWORD dwExStyle = GetWindowLongPtr(hWnd, GWL_EXSTYLE);
-	RECT rect = { 0, 0, LONG(width), LONG(height) };
-	AdjustWindowRectEx(&rect, dwStyle, FALSE, dwExStyle);
-}
-
-bool Application::CreateGameWindow(
+bool CApplication::CreateGameWindow(
 	HINSTANCE hInstance,
 	std::wstring title,
 	unsigned int width,
@@ -69,11 +69,11 @@ bool Application::CreateGameWindow(
 	}
 }
 
-void Application::Exit() {
+void CApplication::Exit() {
 	SendMessage(_hWnd, WM_DESTROY, 0, 0);
 }
 
-bool Application::HandleMessage() {
+bool CApplication::HandleMessage() {
 	MSG msg = {};
 	bool done = false;
 
@@ -89,7 +89,7 @@ bool Application::HandleMessage() {
 	return done;
 }
 
-LRESULT Application::WinProc(
+LRESULT CApplication::WinProc(
 	HWND hWnd,
 	UINT uMsg,
 	WPARAM wParam,
@@ -102,7 +102,6 @@ LRESULT Application::WinProc(
 
 	default:
 		return DefWindowProc(hWnd, uMsg, wParam, lParam);
-		break;
 	}
 	return 0;
 }

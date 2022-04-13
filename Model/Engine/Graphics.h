@@ -8,20 +8,19 @@
 #include <unordered_map>
 #pragma endregion
 
-struct Texture {
+struct CTexture {
 	ID3D10Texture2D* _texture = nullptr;
 	ID3D10ShaderResourceView* _rsview = nullptr;
 	int _width = 0;
 	int _height = 0;
 
-	Texture(ID3D10Texture2D* texture, ID3D10ShaderResourceView* rsview);
-	~Texture();
+	~CTexture();
+	CTexture(ID3D10Texture2D* texture,ID3D10ShaderResourceView* rsview);
 };
-typedef Texture* pTexture;
+typedef CTexture* pTexture;
 
-class Graphics {
-
-#pragma region Direct3D Wrapper
+class CGraphics {
+	/* Direct3D */
 private:
 	ID3D10Device* _device = NULL;
 	IDXGISwapChain* _swapChain = NULL;
@@ -49,23 +48,22 @@ private:
 	bool CreateSpriteHandler();
 	bool CreateBlendState();
 
-	pTexture LoadTexture(std::wstring sourcePath);
 
 public:
 	bool Initialize(HWND hWnd);
 	void Shutdown();
-#pragma endregion
 
-#pragma region Textures Database
+	/* Textures Database */
 private:
 	std::unordered_map<unsigned int, pTexture> _textures;
 
-public:
-	void Load(unsigned int id, std::wstring sourcePath);
-	pTexture GetTexture(unsigned int id);
-#pragma endregion
+private:
+	pTexture LoadTextureFromFile(std::wstring sourcePath);
 
+public:
+	void LoadTexture(unsigned int id, std::wstring sourcePath);
+	pTexture GetTexture(unsigned int id);
 };
-typedef Graphics* pGraphics;
+typedef CGraphics* pGraphics;
 
 #endif // !__GRAPHICS_H__

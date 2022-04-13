@@ -7,10 +7,11 @@
 #include <string>
 #pragma endregion
 
-class Application {
+class CApplication {
 private:
 	const std::wstring WINDOW_CLASS_NAME = L"GameWindow";
 
+private:
 	HINSTANCE _hInstance = NULL;
 	HWND _hWnd = NULL;
 
@@ -19,8 +20,8 @@ public:
 	HWND GetWindow() { return _hWnd; }
 
 private:
-	void RegisterWindowClass(HINSTANCE hInstance);
 	void AdjustWindowSize(HWND hWnd, unsigned int width, unsigned int height);
+	void RegisterWindowClass(HINSTANCE hInstance);
 
 public:
 	bool CreateGameWindow(HINSTANCE hInstance, std::wstring title, unsigned int width, unsigned int height);
@@ -28,6 +29,6 @@ public:
 	bool HandleMessage();
 	static LRESULT CALLBACK WinProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 };
-typedef Application* pApplication;
+typedef CApplication* pApplication;
 
 #endif // !__APPLICATION_H__

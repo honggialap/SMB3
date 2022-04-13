@@ -5,8 +5,8 @@
 
 #pragma region Texture
 
-Texture::Texture(
-	ID3D10Texture2D* texture,
+CTexture::CTexture(
+	ID3D10Texture2D* texture, 
 	ID3D10ShaderResourceView* rsview
 ) {
 	_texture = texture;
@@ -18,7 +18,7 @@ Texture::Texture(
 	_height = desc.Height;
 }
 
-Texture::~Texture() {
+CTexture::~CTexture() {
 	if (_rsview) {
 		_rsview->Release();
 	}
@@ -30,9 +30,9 @@ Texture::~Texture() {
 
 #pragma endregion
 
-#pragma region Direct3D Wrapper
+#pragma region Direct3D
 
-bool Graphics::CreateSwapChain(
+bool CGraphics::CreateSwapChain(
 	HWND hWnd
 ) {
 	RECT rect;
@@ -72,7 +72,7 @@ bool Graphics::CreateSwapChain(
 	return true;
 }
 
-bool Graphics::CreateRenderTargetView() {
+bool CGraphics::CreateRenderTargetView() {
 	ID3D10Texture2D* pBackBuffer;
 	HRESULT result = _swapChain->GetBuffer(
 		0,
@@ -104,7 +104,7 @@ bool Graphics::CreateRenderTargetView() {
 	return true;
 }
 
-bool Graphics::CreateSpriteHandler() {
+bool CGraphics::CreateSpriteHandler() {
 	D3D10_VIEWPORT viewPort;
 	viewPort.Width = _backBufferWidth;
 	viewPort.Height = _backBufferHeight;
@@ -164,7 +164,7 @@ bool Graphics::CreateSpriteHandler() {
 	return true;
 }
 
-bool Graphics::CreateBlendState() {
+bool CGraphics::CreateBlendState() {
 	D3D10_BLEND_DESC StateDesc;
 	ZeroMemory(&StateDesc, sizeof(D3D10_BLEND_DESC));
 	StateDesc.AlphaToCoverageEnable = FALSE;
@@ -189,8 +189,61 @@ bool Graphics::CreateBlendState() {
 	return true;
 }
 
+bool CGraphics::Initialize(
+	HWND hWnd
+) {
+	if (!CreateSwapChain(hWnd)) {
+		return false;
+	}
 
-pTexture Graphics::LoadTexture(
+	if (!CreateRenderTargetView()) {
+		return false;
+	}
+
+	if (!CreateSpriteHandler()) {
+		return false;
+	}
+
+	if (!CreateBlendState()) {
+		return false;
+	}
+
+	return true;
+}
+
+void CGraphics::Shutdown() {
+	for (auto texture : _textures) {
+		delete texture.second;
+		texture.second = nullptr;
+	}
+	_textures.clear();
+
+	if (_blendStateAlpha) {
+		_blendStateAlpha->Release();
+	}
+
+	if (_spriteHandler) {
+		_spriteHandler->Release();
+	}
+
+	if (_renderTargetView) {
+		_renderTargetView->Release();
+	}
+
+	if (_swapChain) {
+		_swapChain->Release();
+	}
+
+	if (_device) {
+		_device->Release();
+	}
+}
+
+#pragma endregion
+
+#pragma region Textures Database
+
+pTexture CGraphics::LoadTextureFromFile(
 	std::wstring sourcePath
 ) {
 	ID3D10Resource* pD3D10Resource = NULL;
@@ -268,64 +321,10 @@ pTexture Graphics::LoadTexture(
 	}
 
 	DebugOut(L"[Engine] Texture loaded: %s\n", sourcePath.c_str());
-	return new Texture(tex, gSpriteTextureRV);
+	return new CTexture(tex, gSpriteTextureRV);
 }
 
-bool Graphics::Initialize(
-	HWND hWnd
-) {
-	if (!CreateSwapChain(hWnd)) {
-		return false;
-	}
-
-	if (!CreateRenderTargetView()) {
-		return false;
-	}
-
-	if (!CreateSpriteHandler()) {
-		return false;
-	}
-
-	if (!CreateBlendState()) {
-		return false;
-	}
-
-	return true;
-}
-
-void Graphics::Shutdown() {
-	for (auto texture : _textures) {
-		delete texture.second;
-		texture.second = nullptr;
-	}
-	_textures.clear();
-
-	if (_blendStateAlpha) {
-		_blendStateAlpha->Release();
-	}
-
-	if (_spriteHandler) {
-		_spriteHandler->Release();
-	}
-
-	if (_renderTargetView) {
-		_renderTargetView->Release();
-	}
-
-	if (_swapChain) {
-		_swapChain->Release();
-	}
-
-	if (_device) {
-		_device->Release();
-	}
-}
-
-#pragma endregion
-
-#pragma region Textures Database
-
-void Graphics::Load(
+void CGraphics::LoadTexture(
 	unsigned int id,
 	std::wstring sourcePath
 ) {
@@ -334,7 +333,7 @@ void Graphics::Load(
 		return;
 	}
 
-	auto texture = LoadTexture(sourcePath);
+	auto texture = LoadTextureFromFile(sourcePath);
 	if (texture == nullptr) {
 		return;
 	}
@@ -342,7 +341,7 @@ void Graphics::Load(
 	_textures[id] = texture;
 }
 
-pTexture Graphics::GetTexture(
+pTexture CGraphics::GetTexture(
 	unsigned int id
 ) {
 	if (_textures.find(id) == _textures.end()) {

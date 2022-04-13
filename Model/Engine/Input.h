@@ -10,23 +10,25 @@
 #include <dinput.h>
 #pragma endregion
 
-class KeyHandler {
+class IKeyHandler {
 public:
 	virtual void KeyState() = 0;
 	virtual void OnKeyDown(int keyCode) = 0;
 	virtual void OnKeyUp(int keyCode) = 0;
 };
-typedef KeyHandler* pKeyHandler;
+typedef IKeyHandler* pKeyHandler;
 
-class Input {
+class CInput {
+	/* DirectInput */
 private:
 	static const unsigned int KEYBOARD_BUFFER_SIZE = 1024;
 	static const unsigned int KEYBOARD_STATE_SIZE = 256;
 
+private:
 	LPDIRECTINPUT8 _directInput = NULL;
 	LPDIRECTINPUTDEVICE8 _device = NULL;
-	BYTE _keyStates[Input::KEYBOARD_STATE_SIZE];
-	DIDEVICEOBJECTDATA _keyEvents[Input::KEYBOARD_BUFFER_SIZE];
+	BYTE _keyStates[CInput::KEYBOARD_STATE_SIZE];
+	DIDEVICEOBJECTDATA _keyEvents[CInput::KEYBOARD_BUFFER_SIZE];
 	pKeyHandler _keyHandler = nullptr;
 
 public:
@@ -35,6 +37,6 @@ public:
 
 	void ProcessKeyboard();
 };
-typedef Input* pInput;
+typedef CInput* pInput;
 
 #endif // !__INPUT_H__

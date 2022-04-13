@@ -144,7 +144,7 @@
     <ClCompile Include="Model\Engine\Animation.cpp" />
     <ClCompile Include="Model\Engine\Application.cpp" />
     <ClCompile Include="Model\Engine\Audio.cpp" />
-    <ClCompile Include="Model\Engine\AudioSource.cpp" />
+    <ClCompile Include="Model\Engine\Sound.cpp" />
     <ClCompile Include="Model\Engine\Collision.cpp" />
     <ClCompile Include="Model\Engine\Game.cpp" />
     <ClCompile Include="Model\Engine\GameObject.cpp" />
@@ -163,10 +163,25 @@
     <ClCompile Include="WinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include="packages.config" />
+    <None Include="workspace.code-workspace" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Data\GameData.xml" />
+    <Xml Include="Data\Scene\IntroScene.xml" />
+    <Xml Include="Data\Scene\World11Scene.xml" />
+    <Xml Include="Data\Scene\WorldMapGrasslandScene.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Data\Texture\brick.png" />
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="Model\Engine\Animation.h" />
     <ClInclude Include="Model\Engine\Application.h" />
     <ClInclude Include="Model\Engine\Audio.h" />
-    <ClInclude Include="Model\Engine\AudioSource.h" />
+    <ClInclude Include="Model\Engine\Sound.h" />
     <ClInclude Include="Model\Engine\Collision.h" />
     <ClInclude Include="Model\Engine\Game.h" />
     <ClInclude Include="Model\Engine\GameObject.h" />
@@ -183,21 +198,6 @@
     <ClInclude Include="Model\World\Koopa.h" />
     <ClInclude Include="Model\World\Mario.h" />
     <ClInclude Include="Model\World\Platform.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include=".gitattributes" />
-    <None Include=".gitignore" />
-    <None Include="packages.config" />
-    <None Include="workspace.code-workspace" />
-  </ItemGroup>
-  <ItemGroup>
-    <Xml Include="Data\GameData.xml" />
-    <Xml Include="Data\Scene\IntroScene.xml" />
-    <Xml Include="Data\Scene\World11Scene.xml" />
-    <Xml Include="Data\Scene\WorldMapGrasslandScene.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="Data\Texture\brick.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

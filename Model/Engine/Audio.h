@@ -7,17 +7,7 @@
 #include <unordered_map>
 #pragma endregion
 
-struct Sound {
-	LPDIRECTSOUNDBUFFER8 _secondaryBuffer = NULL;
-
-	~Sound();
-	bool Play();
-};
-typedef Sound* pSound;
-
-class Audio {
-
-#pragma region DirectSound Wrapper
+class CAudio {
 private:
 	struct WaveHeaderType {
 		char chunkId[4];
@@ -42,24 +32,12 @@ private:
 public:
 	LPDIRECTSOUND8 GetDevice() { return _device; }
 
-private:
-	pSound LoadSound(std::string sourcePath);
-
 public:
 	bool Initialize(HWND hWnd);
 	void Shutdown();
-#pragma endregion
 
-#pragma region Sounds Database
-private:
-	std::unordered_map<unsigned int, pSound> _sounds;
-
-public:
-	void Load(unsigned int id, std::string sourcePath);
-	pSound GetSound(unsigned int id);
-#pragma endregion
-
+	bool LoadSoundFromFile(LPDIRECTSOUNDBUFFER8 secondaryBuffer, std::string sourcePath);
 };
-typedef Audio* pAudio;
+typedef CAudio* pAudio;
 
 #endif // !__AUDIO_H__

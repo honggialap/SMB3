@@ -6,7 +6,8 @@
 #include <chrono>
 #pragma endregion
 
-class Time {
+class CTime {
+	/* Chronos */
 private:
 	std::chrono::steady_clock _clock;
 	std::chrono::steady_clock::time_point _startTimeStamp;
@@ -24,6 +25,6 @@ public:
 	void StartClock();
 	void TickClock();
 };
-typedef Time* pTime;
+typedef CTime* pTime;
 
 #endif // !__TIME_H__
