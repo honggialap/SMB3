@@ -19,9 +19,9 @@ struct CScene {
 	bool _play = false;
 	bool _load = false;
 
-	CScene(unsigned int id, std::string _source);
-	void Add(unsigned int id);
-	void Remove(unsigned int id);
+	CScene(unsigned int sceneID, std::string _source);
+	void Add(unsigned int gameObjectID);
+	void Remove(unsigned int gameObjectID);
 	void Clean();
 };
 typedef CScene* pScene;
@@ -78,15 +78,15 @@ protected:
 	bool _sceneLoading = false;
 
 protected:
-	void AddScene(unsigned int id, std::string source);
+	void AddScene(unsigned int sceneID, std::string source);
 	void SceneLoading();
 
 	void LoadScene(pScene scene);
 	void UnloadScene(pScene scene);
 
 public:
-	void PlayScene(unsigned int id);
-	void StopScene(unsigned int id);
+	void PlayScene(unsigned int sceneID);
+	void StopScene(unsigned int sceneID);
 
 	/* Game Objects Database */
 protected:
@@ -115,8 +115,8 @@ public:
 		unsigned int layer
 	) = 0;
 
-	pGameObject GetGameObject(unsigned int id);
-	pGameObject GetGameObject(std::string name);
+	pGameObject GetGameObject(unsigned int gameObjectID);
+	pGameObject GetGameObject(std::string gameObjectName);
 
 	std::vector<unsigned int> GetActives();
 	std::vector<pGameObject> GetLocal(unsigned int gameObjectID);
@@ -128,13 +128,13 @@ protected:
 	std::vector<pGameObject> _renderQueue;
 
 protected:
-	bool Load(HINSTANCE hInstance, std::string sourcePath);
+	bool Load(HINSTANCE hInstance, std::string source);
 	void Update(float elapsedMs);
 	void Render();
 	void Shutdown();
 
 public:
-	void Run(HINSTANCE hInstance, std::string sourcePath);
+	void Run(HINSTANCE hInstance, std::string source);
 };
 typedef CGame* pGame;
 

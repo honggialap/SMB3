@@ -5,34 +5,34 @@
 #pragma region Scene
 
 CScene::CScene(
-	unsigned int id,
+	unsigned int sceneID,
 	std::string source
 ) {
-	_id = id;
+	_id = sceneID;
 	_source = source;
 }
 
 void CScene::Add(
-	unsigned int id
+	unsigned int gameObjectID
 ) {
-	if (std::find(_gameObjects.begin(), _gameObjects.end(), id) != _gameObjects.end()) {
-		DebugOut(L"[Engine] GameObject with id %d already added to scene.\n", id);
+	if (std::find(_gameObjects.begin(), _gameObjects.end(), gameObjectID) != _gameObjects.end()) {
+		DebugOut(L"[Engine] GameObject with id %d already added to scene.\n", gameObjectID);
 		return;
 	}
 
-	_gameObjects.push_back(id);
+	_gameObjects.push_back(gameObjectID);
 }
 
 void CScene::Remove(
-	unsigned int id
+	unsigned int gameObjectID
 ) {
-	if (std::find(_gameObjects.begin(), _gameObjects.end(), id) == _gameObjects.end()) {
-		DebugOut(L"[Engine] GameObject with id %d not existed in scene.\n", id);
+	if (std::find(_gameObjects.begin(), _gameObjects.end(), gameObjectID) == _gameObjects.end()) {
+		DebugOut(L"[Engine] GameObject with id %d not existed in scene.\n", gameObjectID);
 		return;
 	}
 
 	_gameObjects.erase(
-		std::remove(_gameObjects.begin(), _gameObjects.end(), id),
+		std::remove(_gameObjects.begin(), _gameObjects.end(), gameObjectID),
 		_gameObjects.end()
 	);
 }
@@ -126,15 +126,15 @@ bool CGame::IsKeyReleased(
 #pragma region Scenes Database
 
 void CGame::AddScene(
-	unsigned int id, 
+	unsigned int sceneID, 
 	std::string source
 ) {
-	if (_scenes.find(id) != _scenes.end()) {
-		DebugOut(L"[Engine] Scene id already used: %d - %s.\n", id, source);
+	if (_scenes.find(sceneID) != _scenes.end()) {
+		DebugOut(L"[Engine] Scene id already used: %d - %s.\n", sceneID, source);
 		return;
 	}
 
-	_scenes[id] = new CScene(id, source);
+	_scenes[sceneID] = new CScene(sceneID, source);
 }
 
 void CGame::SceneLoading() {
@@ -188,35 +188,35 @@ void CGame::UnloadScene(
 ) {
 	scene->_load = false;
 
-	for (auto gameObject : scene->_gameObjects) {
-		_gameObjects[gameObject]->Destroy();
+	for (auto gameObjectID : scene->_gameObjects) {
+		_gameObjects[gameObjectID]->Destroy();
 	}
 }
 
 void CGame::PlayScene(
-	unsigned int id
+	unsigned int sceneID
 ) {
-	if (_scenes.find(id) == _scenes.end()) {
-		DebugOut(L"[Engine] Scene id non existed: %d.\n", id);
+	if (_scenes.find(sceneID) == _scenes.end()) {
+		DebugOut(L"[Engine] Scene id non existed: %d.\n", sceneID);
 		return;
 	}
 
 	_sceneLoading = true;
-	_scenes[id]->_load = true;
-	_scenes[id]->_play = true;
+	_scenes[sceneID]->_load = true;
+	_scenes[sceneID]->_play = true;
 }
 
 void CGame::StopScene(
-	unsigned int id
+	unsigned int sceneID
 ) {
-	if (_scenes.find(id) == _scenes.end()) {
-		DebugOut(L"[Engine] Scene id non exist: %d.\n", id);
+	if (_scenes.find(sceneID) == _scenes.end()) {
+		DebugOut(L"[Engine] Scene id non exist: %d.\n", sceneID);
 		return;
 	}
 
 	_sceneLoading = true;
-	_scenes[id]->_load = true;
-	_scenes[id]->_play = false;
+	_scenes[sceneID]->_load = true;
+	_scenes[sceneID]->_play = false;
 }
 
 #pragma endregion
@@ -231,24 +231,23 @@ void CGame::AddGameObject(
 
 	AddGrid(gameObject->GetId());
 	gameObject->GetScene()->Add(gameObject->GetId());
-
 }
 
 pGameObject CGame::GetGameObject(
-	unsigned int id
+	unsigned int gameObjectID
 ) {
-	if (_gameObjects.find(id) != _gameObjects.end()) {
-		return _gameObjects[id];
+	if (_gameObjects.find(gameObjectID) != _gameObjects.end()) {
+		return _gameObjects[gameObjectID];
 	}
 
 	return nullptr;
 }
 
 pGameObject CGame::GetGameObject(
-	std::string name
+	std::string gameObjectName
 ) {
-	if (_dictionary.find(name) != _dictionary.end()) {
-		return GetGameObject(_dictionary[name]);
+	if (_dictionary.find(gameObjectName) != _dictionary.end()) {
+		return GetGameObject(_dictionary[gameObjectName]);
 	}
 
 	return nullptr;
@@ -259,23 +258,23 @@ std::vector<unsigned int> CGame::GetActives() {
 }
 
 void CGame::Purge() {
-	for (auto it = _gameObjects.begin(); it != _gameObjects.end();) {
-		if (it->second->IsDestroyed()) {
-			RemoveGrid(it->first);
+	for (auto gameObject = _gameObjects.begin(); gameObject != _gameObjects.end();) {
+		if (gameObject->second->IsDestroyed()) {
+			RemoveGrid(gameObject->first);
 
-			it->second->GetScene()->Remove(
-				it->first
+			gameObject->second->GetScene()->Remove(
+				gameObject->first
 			);
 
-			_dictionary.erase(it->second->GetName());
+			_dictionary.erase(gameObject->second->GetName());
 
-			delete it->second;
-			it->second = nullptr;
+			delete gameObject->second;
+			gameObject->second = nullptr;
 
-			it = _gameObjects.erase(it);
+			gameObject = _gameObjects.erase(gameObject);
 		}
 		else {
-			it++;
+			gameObject++;
 		}
 	}
 }
@@ -430,9 +429,9 @@ std::vector<pGameObject> CGame::GetLocal(
 
 void CGame::Run(
 	HINSTANCE hInstance,
-	std::string sourcePath
+	std::string source
 ) {
-	if (!Load(hInstance, sourcePath)) {
+	if (!Load(hInstance, source)) {
 		Shutdown();
 		return;
 	}
@@ -441,8 +440,7 @@ void CGame::Run(
 	float msPerFrame = 1000.0f / _frameRate;
 	float elapsedMs = 0.0f;
 
-	bool done = false;
-	while (!done) {
+	while (!_application->HandleMessage()) {
 		SceneLoading();
 
 		_time->TickClock();
@@ -458,8 +456,6 @@ void CGame::Run(
 		else {
 			Sleep(DWORD(msPerFrame - elapsedMs));
 		}
-
-		done = _application->HandleMessage();
 	}
 
 	Shutdown();
@@ -467,26 +463,27 @@ void CGame::Run(
 
 bool CGame::Load(
 	HINSTANCE hInstance,
-	std::string sourcePath
+	std::string source
 ) {
 	bool result;
 
 	pugi::xml_document gameData;
-	gameData.load_file(sourcePath.c_str());
+	gameData.load_file(source.c_str());
 
-	auto gameSettings = gameData.child("GameData").child("GameSettings");
-	_frameRate = gameSettings.attribute("frameRate").as_float();
-	_gridWidth = gameSettings.attribute("gridWidth").as_int();
-	_gridHeight = gameSettings.attribute("gridHeight").as_int();
-	_cameraBuffer = gameSettings.attribute("cameraBuffer").as_float();
+	auto gameSettingsNode = gameData.child("GameData").child("GameSettings");
+
+	_frameRate = gameSettingsNode.attribute("frameRate").as_float();
+	_gridWidth = gameSettingsNode.attribute("gridWidth").as_int();
+	_gridHeight = gameSettingsNode.attribute("gridHeight").as_int();
+	_cameraBuffer = gameSettingsNode.attribute("cameraBuffer").as_float();
 
 	result = _application->CreateGameWindow(
 		hInstance,
 		std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(
-			gameSettings.attribute("title").as_string()
+			gameSettingsNode.attribute("title").as_string()
 		),
-		gameSettings.attribute("resolutionWidth").as_uint(),
-		gameSettings.attribute("resolutionHeight").as_uint()
+		gameSettingsNode.attribute("resolutionWidth").as_uint(),
+		gameSettingsNode.attribute("resolutionHeight").as_uint()
 	);
 	if (!result) {
 		return false;
@@ -515,36 +512,36 @@ bool CGame::Load(
 		return false;
 	}
 
-	for (auto button = gameData.child("GameData").child("Button");
-		button;
-		button = button.next_sibling("Button")) {
+	for (auto buttonNode = gameData.child("GameData").child("Button");
+		buttonNode;
+		buttonNode = buttonNode.next_sibling("Button")) {
 		BindKey(
-			button.attribute("keyCode").as_int()
+			buttonNode.attribute("keyCode").as_int()
 		);
 	}
 
-	for (auto texture = gameData.child("GameData").child("Texture");
-		texture;
-		texture = texture.next_sibling("Texture")) {
+	for (auto textureNode = gameData.child("GameData").child("Texture");
+		textureNode;
+		textureNode = textureNode.next_sibling("Texture")) {
 		_graphics->LoadTexture(
-			texture.attribute("id").as_uint(),
+			textureNode.attribute("id").as_uint(),
 			std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(
-				texture.attribute("source").as_string()
+				textureNode.attribute("source").as_string()
 			)
 		);
 	}
 
-	for (auto scene = gameData.child("GameData").child("Scene");
-		scene;
-		scene = scene.next_sibling("Scene")) {
+	for (auto sceneNode = gameData.child("GameData").child("Scene");
+		sceneNode;
+		sceneNode = sceneNode.next_sibling("Scene")) {
 		AddScene(
-			scene.attribute("id").as_uint(),
-			scene.attribute("source").as_string()
+			sceneNode.attribute("id").as_uint(),
+			sceneNode.attribute("source").as_string()
 		);
 	}
 
 	PlayScene(
-		gameSettings.attribute("startScene").as_uint()
+		gameSettingsNode.attribute("startScene").as_uint()
 	);
 
 	return true;
@@ -561,9 +558,9 @@ void CGame::Update(float elapsedMs) {
 		}
 	}
 
-	for (auto id : _updateQueue) {
-		_gameObjects[id]->Update(elapsedMs);
-		UpdateGrid(id);
+	for (auto gameObjectID : _updateQueue) {
+		_gameObjects[gameObjectID]->Update(elapsedMs);
+		UpdateGrid(gameObjectID);
 	}
 
 	std::sort(_renderQueue.begin(), _renderQueue.end(), CGameObject::CompareLayer);

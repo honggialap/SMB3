@@ -355,7 +355,6 @@ void CCollider::Process(
 				_gameObject->OnCollisionWith(colY);
 			}
 			else { // both colX & colY are NULL 
-
 				x += dx;
 				y += dy;
 			}

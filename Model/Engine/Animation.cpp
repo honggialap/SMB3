@@ -16,7 +16,7 @@ CAnimation::~CAnimation() {
 }
 
 void CAnimation::AddFrame(
-	unsigned int spriteId, 
+	unsigned int spriteId,
 	float frameTime
 ) {
 	_frames.push_back(
@@ -53,13 +53,15 @@ void CAnimation::Update(
 		_elapsedTime -= _frames.at(_frameIndex).second;
 		_frameIndex++;
 
-		if (_frameIndex >= _frames.size()) {
-			if (_loop) {
-				_frameIndex = 0;
-			}
-			else {
-				Stop();
-			}
+		if (_frameIndex < _frames.size()) {
+			continue;
+		}
+
+		if (_loop) {
+			_frameIndex = 0;
+		}
+		else {
+			Stop();
 		}
 	}
 }
