@@ -1,12 +1,57 @@
 <GameData>
-  
+
   <GameSettings
-    title ="Graphics - Input - Audio test"
+    title ="SUPER MARIO BROS 3"
     resolutionWidth ="512"
     resolutionHeight ="480"
-    frameRate ="120.0"
+    frameRate ="144.0"
+    gridWidth ="512"
+    gridHeight ="480"
+    cameraBuffer ="16.0"
+    startScene ="0"
     />
-  
-  <Texture id="1" source ="Data/Texture/Brick.png"/>
+
+  <!--LEFT-->
+  <Button keyCode ="203"/>
+  <!--UP-->
+  <Button keyCode ="200"/>
+  <!--RIGHT-->
+  <Button keyCode ="205"/>
+  <!--DOWN-->
+  <Button keyCode ="208"/>
+  <!--A-->
+  <Button keyCode ="30"/>
+  <!--B-->
+  <Button keyCode ="31"/>
+  <!--HOT1-->
+  <Button keyCode ="2"/>
+  <!--HOT2-->
+  <Button keyCode ="3"/>
+  <!--HOT3-->
+  <Button keyCode ="4"/>
+  <!--HOT4-->
+  <Button keyCode ="5"/>
+  <!--HOT5-->
+  <Button keyCode ="6"/>
+  <!--HOT6-->
+  <Button keyCode ="7"/>
+
+  <!-- Textures -->
+  <Texture id="101" source="Data/Texture/BBox.png"/>
+  <Texture id="201" source="Data/Texture/Mario.png"/>
+  <Texture id="202" source="Data/Texture/Goomba.png"/>
+  <Texture id="203" source="Data/Texture/Koopa.png"/>
+  <Texture id="204" source="Data/Texture/Plant.png"/>
+  <Texture id="301" source="Data/Texture/Item.png"/>
+  <Texture id="401" source="Data/Texture/Block.png"/>
+  <Texture id="402" source="Data/Texture/Pipe.png"/>
+  <Texture id="701" source="Data/Texture/Effect.png"/>
+
+  <!-- Scenes -->
+  <Scene id="0" source="Data/Scene/Sandbox.xml"/>
+  <Scene id="101" source="Data/Scene/MainGame.xml"/>
+  <Scene id="201" source="Data/Scene/Title.xml"/>
+  <Scene id="301" source="Data/Scene/WorldMapGrassland.xml"/>
+  <Scene id="401" source="Data/Scene/World11.xml"/>
 
 </GameData>

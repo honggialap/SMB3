@@ -90,7 +90,7 @@ public:
 
 	/* Game Objects Database */
 protected:
-	unsigned int nextGameObjectID = 0;
+	unsigned int _nextGameObjectID = 0;
 	std::unordered_map<unsigned int, pGameObject> _gameObjects;
 	std::unordered_map<std::string, unsigned int> _dictionary;
 	

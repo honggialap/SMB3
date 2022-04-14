@@ -476,6 +476,9 @@ bool CGame::Load(
 
 	auto gameSettings = gameData.child("GameData").child("GameSettings");
 	_frameRate = gameSettings.attribute("frameRate").as_float();
+	_gridWidth = gameSettings.attribute("gridWidth").as_int();
+	_gridHeight = gameSettings.attribute("gridHeight").as_int();
+	_cameraBuffer = gameSettings.attribute("cameraBuffer").as_float();
 
 	result = _application->CreateGameWindow(
 		hInstance,
@@ -510,6 +513,14 @@ bool CGame::Load(
 	);
 	if (!result) {
 		return false;
+	}
+
+	for (auto button = gameData.child("GameData").child("Button");
+		button;
+		button = button.next_sibling("Button")) {
+		BindKey(
+			button.attribute("keyCode").as_int()
+		);
 	}
 
 	for (auto texture = gameData.child("GameData").child("Texture");
