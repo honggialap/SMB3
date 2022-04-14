@@ -3,11 +3,9 @@
 #include "Ultilities.h"
 #pragma endregion
 
-#pragma region DirectInput
-
 bool CInput::Initialize(
-	HINSTANCE hInstance, 
-	HWND hWnd, 
+	HINSTANCE hInstance,
+	HWND hWnd,
 	pKeyHandler keyHandler
 ) {
 	_keyHandler = keyHandler;
@@ -115,5 +113,3 @@ void CInput::ProcessKeyboard() {
 			_keyHandler->OnKeyUp(KeyCode);
 	}
 }
-
-#pragma endregion

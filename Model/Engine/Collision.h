@@ -56,7 +56,6 @@ public:
 	CCollider(pGameObject gameObject);
 	~CCollider();
 
-public:
 	static void SweptAABB(
 		float ml,			// move left
 		float mt,			// move top

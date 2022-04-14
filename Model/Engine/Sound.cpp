@@ -2,10 +2,11 @@
 #include "Sound.h"
 #pragma endregion
 
-CSound::CSound(pGameObject gameObject) {
+CSound::CSound(
+	pGameObject gameObject
+) {
 	_gameObject = gameObject;
 }
-
 
 CSound::~CSound() {
 	if (_secondaryBuffer) {
@@ -14,7 +15,7 @@ CSound::~CSound() {
 }
 
 void CSound::Play(
-	bool global, 
+	bool global,
 	bool loop
 ) {
 	HRESULT result;

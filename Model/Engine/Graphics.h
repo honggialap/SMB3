@@ -15,12 +15,11 @@ struct CTexture {
 	int _height = 0;
 
 	~CTexture();
-	CTexture(ID3D10Texture2D* texture,ID3D10ShaderResourceView* rsview);
+	CTexture(ID3D10Texture2D* texture, ID3D10ShaderResourceView* rsview);
 };
 typedef CTexture* pTexture;
 
 class CGraphics {
-	/* Direct3D */
 private:
 	ID3D10Device* _device = NULL;
 	IDXGISwapChain* _swapChain = NULL;
@@ -32,6 +31,8 @@ private:
 	unsigned int _backBufferWidth = 0;
 	unsigned int _backBufferHeight = 0;
 
+	std::unordered_map<unsigned int, pTexture> _textures;
+
 public:
 	ID3D10Device* GetDevice() { return _device; }
 	IDXGISwapChain* GetSwapChain() { return _swapChain; }
@@ -42,25 +43,15 @@ public:
 	unsigned int GetBackBufferWidth() { return _backBufferWidth; }
 	unsigned int GetBackBufferHeight() { return _backBufferHeight; }
 
-private:
 	bool CreateSwapChain(HWND hWnd);
 	bool CreateRenderTargetView();
 	bool CreateSpriteHandler();
 	bool CreateBlendState();
 
-
-public:
 	bool Initialize(HWND hWnd);
 	void Shutdown();
 
-	/* Textures Database */
-private:
-	std::unordered_map<unsigned int, pTexture> _textures;
-
-private:
 	pTexture LoadTextureFromFile(std::wstring sourcePath);
-
-public:
 	void LoadTexture(unsigned int id, std::wstring sourcePath);
 	pTexture GetTexture(unsigned int id);
 };

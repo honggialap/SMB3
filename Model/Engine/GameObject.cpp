@@ -49,8 +49,6 @@ CGameObject::~CGameObject() {
 	_sprites.clear();
 }
 
-#pragma region Life cycle
-
 void CGameObject::Load() {
 	/* Read file */
 	pugi::xml_document prefabDoc;
@@ -117,10 +115,6 @@ void CGameObject::Load() {
 	}
 }
 
-#pragma endregion
-
-#pragma region Components Database
-
 void CGameObject::AddSprite(
 	unsigned int id, 
 	pSprite sprite
@@ -168,5 +162,3 @@ void CGameObject::AddSound(
 
 	_sounds[id] = sound;
 }
-
-#pragma endregion

@@ -30,7 +30,6 @@ public:
 	CSprite(pGameObject gameObject, unsigned int left, unsigned int top, unsigned int width, unsigned int height, int offsetX, int offsetY, pTexture texture);
 	~CSprite();
 
-public:
 	void Render(float x, float y, bool isUI = false);
 };
 typedef CSprite* pSprite;

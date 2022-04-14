@@ -96,12 +96,15 @@ LRESULT CApplication::WinProc(
 	LPARAM lParam
 ) {
 	switch (uMsg) {
-	case WM_DESTROY:
+	case WM_DESTROY: {
 		PostQuitMessage(0);
-		break;
+	} break;
 
-	default:
+	default: {
 		return DefWindowProc(hWnd, uMsg, wParam, lParam);
+	} break;
+
 	}
+
 	return 0;
 }

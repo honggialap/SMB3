@@ -19,12 +19,10 @@ public:
 typedef IKeyHandler* pKeyHandler;
 
 class CInput {
-	/* DirectInput */
 private:
 	static const unsigned int KEYBOARD_BUFFER_SIZE = 1024;
 	static const unsigned int KEYBOARD_STATE_SIZE = 256;
 
-private:
 	LPDIRECTINPUT8 _directInput = NULL;
 	LPDIRECTINPUTDEVICE8 _device = NULL;
 	BYTE _keyStates[CInput::KEYBOARD_STATE_SIZE];

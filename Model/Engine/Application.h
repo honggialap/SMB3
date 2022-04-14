@@ -10,8 +10,6 @@
 class CApplication {
 private:
 	const std::wstring WINDOW_CLASS_NAME = L"GameWindow";
-
-private:
 	HINSTANCE _hInstance = NULL;
 	HWND _hWnd = NULL;
 
@@ -19,11 +17,8 @@ public:
 	HINSTANCE GetInstance() { return _hInstance; }
 	HWND GetWindow() { return _hWnd; }
 
-private:
 	void AdjustWindowSize(HWND hWnd, unsigned int width, unsigned int height);
 	void RegisterWindowClass(HINSTANCE hInstance);
-
-public:
 	bool CreateGameWindow(HINSTANCE hInstance, std::wstring title, unsigned int width, unsigned int height);
 	void Exit();
 	bool HandleMessage();

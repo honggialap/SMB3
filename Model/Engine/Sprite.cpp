@@ -5,10 +5,10 @@
 #pragma endregion
 
 CSprite::CSprite(
-	pGameObject gameObject, 
-	unsigned int left, unsigned int top, 
-	unsigned int width, unsigned int height, 
-	int offsetX, int offsetY, 
+	pGameObject gameObject,
+	unsigned int left, unsigned int top,
+	unsigned int width, unsigned int height,
+	int offsetX, int offsetY,
 	pTexture texture
 ) {
 	_gameObject = gameObject;
@@ -39,7 +39,7 @@ CSprite::~CSprite() {
 }
 
 void CSprite::Render(
-	float x, float y, 
+	float x, float y,
 	bool isUI
 ) {
 	auto graphics = _gameObject->GetGame()->GetGraphics();
@@ -62,9 +62,10 @@ void CSprite::Render(
 		graphics->GetSpriteHandler()->DrawSpritesImmediate(&_sprite, 1, 0, 0);
 	}
 	else {
-		if (x > cameraX - cameraBuffer && x < cameraX + graphics->GetBackBufferWidth() + cameraBuffer
-			&& y < cameraY + cameraBuffer && y > cameraY - graphics->GetBackBufferWidth() - cameraBuffer)
-		{
+		if ((x > cameraX - cameraBuffer)
+			&& (x < cameraX + graphics->GetBackBufferWidth() + cameraBuffer)
+			&& (y < cameraY + cameraBuffer)
+			&& (y > cameraY - graphics->GetBackBufferWidth() - cameraBuffer)) {
 			D3DXMatrixTranslation(&matTranslation, x - cameraX, graphics->GetBackBufferHeight() + y - cameraY, 0.1f);
 			_sprite.matWorld = (_matScaling * matTranslation);
 			graphics->GetSpriteHandler()->DrawSpritesImmediate(&_sprite, 1, 0, 0);

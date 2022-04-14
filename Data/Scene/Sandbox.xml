@@ -1,0 +1,12 @@
+<Scene>
+  <GameObject actor="20101" name="mario" source="Data/Prefab/World/Mario.xml" x="100" y="100" gx="0" gy="0" layer="10"/>
+  
+  <GameObject actor="40101" name="platform1" source="Data/Prefab/World/PlatformSolid16x1.xml" x="0" y="0" gx="0" gy="0" layer="10"/>
+  <GameObject actor="40101" name="platform2" source="Data/Prefab/World/PlatformSolid16x1.xml" x="512" y="0" gx="0" gy="0" layer="10"/>
+  <GameObject actor="40101" name="platform3" source="Data/Prefab/World/PlatformHollow16x1.xml" x="512" y="100" gx="0" gy="0" layer="10"/>
+  <GameObject actor="40101" name="platform4" source="Data/Prefab/World/PlatformSolid16x1.xml" x="1024" y="0" gx="0" gy="0" layer="10"/>
+  <GameObject actor="40101" name="platform5" source="Data/Prefab/World/PlatformSolid16x1.xml" x="1536" y="0" gx="0" gy="0" layer="10"/>
+  <GameObject actor="40101" name="platform6" source="Data/Prefab/World/PlatformSolid16x1.xml" x="2048" y="0" gx="0" gy="0" layer="10"/>
+  <GameObject actor="40101" name="platform7" source="Data/Prefab/World/PlatformSolid1x16.xml" x="-32" y="0" gx="0" gy="0" layer="10"/>
+  <GameObject actor="40101" name="platform8" source="Data/Prefab/World/PlatformSolid1x16.xml" x="2048" y="0" gx="0" gy="0" layer="10"/>
+</Scene>

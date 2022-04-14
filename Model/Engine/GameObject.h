@@ -18,17 +18,6 @@ typedef CScene* pScene;
 #pragma endregion
 
 class CGameObject {
-public:
-	CGameObject(
-		pGame game, pScene scene,
-		unsigned int id, std::string name, std::string source,
-		float x, float y,
-		int gx, int gy,
-		unsigned int layer
-	);
-	~CGameObject();
-
-	/* Identifier */
 protected:
 	pGame _game = nullptr;
 	pScene _scene = nullptr;
@@ -36,29 +25,9 @@ protected:
 	std::string _name;
 	std::string _source;
 
-public:
-	pGame GetGame() { return _game; }
-	pScene GetScene() { return _scene; }
-	unsigned int GetId() { return _id; }
-	std::string GetName() { return _name; }
-
-	/* Life cycle */
-protected:
 	bool _start = false;
 	bool _destroy = false;
 
-public:
-	bool IsDestroyed() { return _destroy; }
-
-public:
-	virtual void Load();
-	virtual void Start() { _start = true; }
-	virtual void Update(float elapsedMs) = 0;
-	virtual void Render() = 0;
-	void Destroy() { _destroy = true; }
-
-	/* Spacial */
-protected:
 	float _x = 0;
 	float _y = 0;
 
@@ -70,7 +39,34 @@ protected:
 
 	unsigned int _layer = 0;
 
+	std::unordered_map<unsigned int, pSprite> _sprites;
+	std::unordered_map<unsigned int, pAnimation> _animations;
+	std::unordered_map<unsigned int, pSound> _sounds;
+	pCollider _collider = nullptr;
+
 public:
+	CGameObject(
+		pGame game, pScene scene,
+		unsigned int id, std::string name, std::string source,
+		float x, float y,
+		int gx, int gy,
+		unsigned int layer
+	);
+	~CGameObject();
+
+	pGame GetGame() { return _game; }
+	pScene GetScene() { return _scene; }
+	unsigned int GetId() { return _id; }
+	std::string GetName() { return _name; }
+
+	bool IsDestroyed() { return _destroy; }
+
+	virtual void Load();
+	virtual void Start() { _start = true; }
+	virtual void Update(float elapsedMs) = 0;
+	virtual void Render() = 0;
+	void Destroy() { _destroy = true; }
+
 	void SetPosition(float x, float y) { _x = x; _y = y; }
 	void GetPosition(float& x, float& y) { x = _x; y = _y; }
 
@@ -84,41 +80,15 @@ public:
 	void SetLayer(unsigned int layer) { _layer = layer; }
 	static bool CompareLayer(CGameObject* a, CGameObject* b) { return a->_layer < b->_layer; }
 
-	/* Sprites Database */
-protected:
-	std::unordered_map<unsigned int, pSprite> _sprites;
-
-protected:
 	void AddSprite(unsigned int id, pSprite sprite);
-
-public:
 	pSprite GetSprite(unsigned int id) { return _sprites[id]; }
 
-	/* Animations Database */
-protected:
-	std::unordered_map<unsigned int, pAnimation> _animations;
-
-protected:
 	void AddAnimation(unsigned int id, pAnimation animation);
-
-public:
 	pAnimation GetAnimation(unsigned int id) { return _animations[id]; }
-
-	/* Sounds Database */
-protected:	
-	std::unordered_map<unsigned int, pSound> _sounds;
-
-protected:
+	
 	void AddSound(unsigned int id, pSound sound);
-	
-public:
 	pSound GetSound(unsigned int id) { return _sounds[id]; }
-	
-	/* Collider */
-protected:
-	pCollider _collider = nullptr;
 
-public:
 	pCollider GetCollider() { return _collider; }
 
 	virtual void GetBoundingBox(float& left, float& top, float& right, float& bottom) = 0;

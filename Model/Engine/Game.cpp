@@ -2,8 +2,6 @@
 #include "Game.h"
 #pragma endregion
 
-#pragma region Scene
-
 CScene::CScene(
 	unsigned int sceneID,
 	std::string source
@@ -41,10 +39,6 @@ void CScene::Clean() {
 	_gameObjects.clear();
 }
 
-#pragma endregion
-
-#pragma region Game
-
 CGame::CGame() {
 	_application = new CApplication();
 	_time = new CTime();
@@ -69,8 +63,6 @@ CGame::~CGame() {
 	delete _application;
 	_application = nullptr;
 }
-
-#pragma region Player
 
 void CGame::KeyState() {
 	_previousButtonState = _currentButtonState;
@@ -121,10 +113,6 @@ bool CGame::IsKeyReleased(
 		&& !_currentButtonState[keyCode];
 }
 
-#pragma endregion
-
-#pragma region Scenes Database
-
 void CGame::AddScene(
 	unsigned int sceneID, 
 	std::string source
@@ -171,7 +159,7 @@ void CGame::LoadScene(
 		gameObjectNode = gameObjectNode.next_sibling("GameObject")) {
 		Create(
 			scene,
-			gameObjectNode.attribute("actorID").as_uint(),
+			gameObjectNode.attribute("actor").as_uint(),
 			gameObjectNode.attribute("name").as_string(),
 			gameObjectNode.attribute("source").as_string(),
 			gameObjectNode.attribute("x").as_float(),
@@ -219,9 +207,27 @@ void CGame::StopScene(
 	_scenes[sceneID]->_play = false;
 }
 
-#pragma endregion
+void CGame::Purge() {
+	for (auto gameObject = _gameObjects.begin(); gameObject != _gameObjects.end();) {
+		if (gameObject->second->IsDestroyed()) {
+			RemoveGrid(gameObject->first);
 
-#pragma region Game Objects Database
+			gameObject->second->GetScene()->Remove(
+				gameObject->first
+			);
+
+			_dictionary.erase(gameObject->second->GetName());
+
+			delete gameObject->second;
+			gameObject->second = nullptr;
+
+			gameObject = _gameObjects.erase(gameObject);
+		}
+		else {
+			gameObject++;
+		}
+	}
+}
 
 void CGame::AddGameObject(
 	pGameObject gameObject
@@ -255,28 +261,6 @@ pGameObject CGame::GetGameObject(
 
 std::vector<unsigned int> CGame::GetActives() {
 	return _updateQueue;
-}
-
-void CGame::Purge() {
-	for (auto gameObject = _gameObjects.begin(); gameObject != _gameObjects.end();) {
-		if (gameObject->second->IsDestroyed()) {
-			RemoveGrid(gameObject->first);
-
-			gameObject->second->GetScene()->Remove(
-				gameObject->first
-			);
-
-			_dictionary.erase(gameObject->second->GetName());
-
-			delete gameObject->second;
-			gameObject->second = nullptr;
-
-			gameObject = _gameObjects.erase(gameObject);
-		}
-		else {
-			gameObject++;
-		}
-	}
 }
 
 void CGame::AddGrid(
@@ -422,10 +406,6 @@ std::vector<pGameObject> CGame::GetLocal(
 
 	return gameObjects;
 }
-
-#pragma endregion
-
-#pragma region Game loop
 
 void CGame::Run(
 	HINSTANCE hInstance,
@@ -611,7 +591,3 @@ void CGame::Shutdown() {
 	_audio->Shutdown();
 	_graphics->Shutdown();
 }
-
-#pragma endregion
-
-#pragma endregion

@@ -3,10 +3,8 @@
 #include "Ultilities.h"
 #pragma endregion
 
-#pragma region Texture
-
 CTexture::CTexture(
-	ID3D10Texture2D* texture, 
+	ID3D10Texture2D* texture,
 	ID3D10ShaderResourceView* rsview
 ) {
 	_texture = texture;
@@ -27,10 +25,6 @@ CTexture::~CTexture() {
 		_texture->Release();
 	}
 }
-
-#pragma endregion
-
-#pragma region Direct3D
 
 bool CGraphics::CreateSwapChain(
 	HWND hWnd
@@ -74,32 +68,20 @@ bool CGraphics::CreateSwapChain(
 
 bool CGraphics::CreateRenderTargetView() {
 	ID3D10Texture2D* pBackBuffer;
-	HRESULT result = _swapChain->GetBuffer(
-		0,
-		__uuidof(ID3D10Texture2D),
-		(LPVOID*)&pBackBuffer
-	);
+	HRESULT result = _swapChain->GetBuffer(0, __uuidof(ID3D10Texture2D), (LPVOID*)&pBackBuffer);
 	if (result != S_OK) {
 		DebugOut(L"[Engine] Get D3D10 Back buffer failed.\n");
 		return false;
 	}
 
-	result = _device->CreateRenderTargetView(
-		pBackBuffer,
-		NULL,
-		&_renderTargetView
-	);
+	result = _device->CreateRenderTargetView(pBackBuffer, NULL, &_renderTargetView);
 	pBackBuffer->Release();
 	if (result != S_OK) {
 		DebugOut(L"[Engine] Create D3D10 Render target view failed.\n");
 		return false;
 	}
 
-	_device->OMSetRenderTargets(
-		1,
-		&_renderTargetView,
-		NULL
-	);
+	_device->OMSetRenderTargets(1, &_renderTargetView, NULL);
 
 	return true;
 }
@@ -134,11 +116,7 @@ bool CGraphics::CreateSpriteHandler() {
 	_device->GSSetSamplers(0, 1, &_pointSamplerState);
 	_device->PSSetSamplers(0, 1, &_pointSamplerState);
 
-	HRESULT result = D3DX10CreateSprite(
-		_device,
-		0,
-		&_spriteHandler
-	);
+	HRESULT result = D3DX10CreateSprite(_device, 0, &_spriteHandler);
 	if (result != S_OK) {
 		DebugOut(L"[Engine] Create D3D10 Sprite handler failed.\n");
 		return false;
@@ -177,10 +155,7 @@ bool CGraphics::CreateBlendState() {
 	StateDesc.BlendOpAlpha = D3D10_BLEND_OP_ADD;
 	StateDesc.RenderTargetWriteMask[0] = D3D10_COLOR_WRITE_ENABLE_ALL;
 
-	HRESULT result = _device->CreateBlendState(
-		&StateDesc,
-		&_blendStateAlpha
-	);
+	HRESULT result = _device->CreateBlendState(&StateDesc, &_blendStateAlpha);
 	if (result != S_OK) {
 		DebugOut(L"[Engine] Create D3D10 Blend state failed.\n");
 		return false;
@@ -238,10 +213,6 @@ void CGraphics::Shutdown() {
 		_device->Release();
 	}
 }
-
-#pragma endregion
-
-#pragma region Textures Database
 
 pTexture CGraphics::LoadTextureFromFile(
 	std::wstring sourcePath
@@ -310,11 +281,7 @@ pTexture CGraphics::LoadTextureFromFile(
 	SRVDesc.Texture2D.MipLevels = desc.MipLevels;
 
 	ID3D10ShaderResourceView* gSpriteTextureRV = NULL;
-	result = _device->CreateShaderResourceView(
-		tex,
-		&SRVDesc,
-		&gSpriteTextureRV
-	);
+	result = _device->CreateShaderResourceView(tex, &SRVDesc, &gSpriteTextureRV);
 	if (FAILED(result)) {
 		DebugOut(L"[Engine] Texture load failed: %s\n", sourcePath.c_str());
 		return nullptr;
@@ -351,5 +318,3 @@ pTexture CGraphics::GetTexture(
 
 	return _textures[id];
 }
-
-#pragma endregion

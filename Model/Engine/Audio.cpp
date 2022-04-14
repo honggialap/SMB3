@@ -6,19 +6,12 @@
 bool CAudio::Initialize(
 	HWND hWnd
 ) {
-	HRESULT result = DirectSoundCreate8(
-		NULL,
-		&_device,
-		NULL
-	);
+	HRESULT result = DirectSoundCreate8(NULL, &_device, NULL);
 	if (FAILED(result)) {
 		return false;
 	}
 
-	result = _device->SetCooperativeLevel(
-		hWnd,
-		DSSCL_PRIORITY
-	);
+	result = _device->SetCooperativeLevel(hWnd, DSSCL_PRIORITY);
 	if (FAILED(result)) {
 		return false;
 	}
@@ -31,11 +24,7 @@ bool CAudio::Initialize(
 	bufferDesc.lpwfxFormat = NULL;
 	bufferDesc.guid3DAlgorithm = GUID_NULL;
 
-	result = _device->CreateSoundBuffer(
-		&bufferDesc,
-		&_primaryBuffer,
-		NULL
-	);
+	result = _device->CreateSoundBuffer(&bufferDesc, &_primaryBuffer, NULL);
 	if (FAILED(result)) {
 		return false;
 	}
@@ -49,9 +38,7 @@ bool CAudio::Initialize(
 	waveFormat.nAvgBytesPerSec = waveFormat.nSamplesPerSec * waveFormat.nBlockAlign;
 	waveFormat.cbSize = 0;
 
-	result = _primaryBuffer->SetFormat(
-		&waveFormat
-	);
+	result = _primaryBuffer->SetFormat(&waveFormat);
 	if (FAILED(result)) {
 		return false;
 	}
@@ -70,7 +57,7 @@ void CAudio::Shutdown() {
 }
 
 bool CAudio::LoadSoundFromFile(
-	LPDIRECTSOUNDBUFFER8 secondaryBuffer, 
+	LPDIRECTSOUNDBUFFER8 secondaryBuffer,
 	std::string sourcePath
 ) {
 	int error;

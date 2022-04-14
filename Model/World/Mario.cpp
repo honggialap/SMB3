@@ -1832,9 +1832,13 @@ void CMario::OnCollisionWith(
 	if (dynamic_cast<pGoomba>(collision->_target))
 		OnCollisionWithGoomba(collision);
 
-	else if (dynamic_cast<pPlatform>(collision->_target))
+	else 
+	*/
+
+	if (dynamic_cast<pPlatform>(collision->_target))
 		OnCollisionWithPlatform(collision);
 
+	/*
 	else if (dynamic_cast<pBlock>(collision->_target))
 		OnCollisionWithBlock(collision);
 
@@ -1866,7 +1870,6 @@ void CMario::OnCollisionWithGoomba(
 void CMario::OnCollisionWithPlatform(
 	pCollision collision
 ) {
-	/*
 	auto platform = dynamic_cast<pPlatform>(collision->_target);
 	if (platform->_solid)
 	{
@@ -1894,7 +1897,6 @@ void CMario::OnCollisionWithPlatform(
 			_ground = true;
 		}
 	}
-	*/
 }
 
 void CMario::OnCollisionWithBlock(

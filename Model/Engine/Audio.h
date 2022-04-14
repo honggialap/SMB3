@@ -25,17 +25,14 @@ private:
 		unsigned long dataSize;
 	};
 
-private:
 	LPDIRECTSOUND8 _device = NULL;
 	LPDIRECTSOUNDBUFFER _primaryBuffer = NULL;
 
 public:
 	LPDIRECTSOUND8 GetDevice() { return _device; }
 
-public:
 	bool Initialize(HWND hWnd);
 	void Shutdown();
-
 	bool LoadSoundFromFile(LPDIRECTSOUNDBUFFER8 secondaryBuffer, std::string sourcePath);
 };
 typedef CAudio* pAudio;

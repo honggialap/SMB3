@@ -1,0 +1,5 @@
+<Prefab>
+  <Sprite id="999901" textureID="101" left="0" top="0" width="512" height="32" offsetX="256" offsetY="16"/>
+  <Stats solid ="true"/>
+  <Body render="true" width="512" height="32" offsetX="256" offsetY="16"/>
+</Prefab>

@@ -2,8 +2,6 @@
 #include "Time.h"
 #pragma endregion
 
-#pragma region Chronos
-
 void CTime::StartClock() {
 	_elapsedMs = 0.0f;
 	_totalElapsedMs = 0.0f;
@@ -23,5 +21,3 @@ void CTime::TickClock() {
 	_totalElapsedMs = std::chrono::duration_cast<std::chrono::duration<float, std::milli>>
 		(_currentTickTimeStamp - _startTimeStamp).count();
 }
-
-#pragma endregion

@@ -7,7 +7,6 @@
 #pragma endregion
 
 class CTime {
-	/* Chronos */
 private:
 	std::chrono::steady_clock _clock;
 	std::chrono::steady_clock::time_point _startTimeStamp;
@@ -21,7 +20,6 @@ public:
 	float GetElapsedMs() { return _elapsedMs; }
 	float GetTotalElapsedMs() { return _totalElapsedMs; }
 
-public:
 	void StartClock();
 	void TickClock();
 };
