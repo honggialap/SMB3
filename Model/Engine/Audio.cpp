@@ -58,7 +58,7 @@ void CAudio::Shutdown() {
 
 bool CAudio::LoadSoundFromFile(
 	LPDIRECTSOUNDBUFFER8 secondaryBuffer,
-	std::string sourcePath
+	std::string source
 ) {
 	int error;
 	FILE* filePtr;
@@ -73,7 +73,7 @@ bool CAudio::LoadSoundFromFile(
 	unsigned long bufferSize;
 
 	// Open the wave file in binary.
-	error = fopen_s(&filePtr, sourcePath.c_str(), "rb");
+	error = fopen_s(&filePtr, source.c_str(), "rb");
 	if (error != 0) {
 		return false;
 	}

@@ -6,14 +6,14 @@
 
 CGameObject::CGameObject(
 	pGame game, pScene scene,
-	unsigned int id, std::string name, std::string source,
+	unsigned int ID, std::string name, std::string source,
 	float x, float y,
 	int gx, int gy,
 	unsigned int layer
 ) {
 	_game = game;
 	_scene = scene;
-	_id = id;
+	_ID = ID;
 	_name = name;
 	_source = source;
 	_x = x;
@@ -72,7 +72,7 @@ void CGameObject::Load() {
 		);
 
 		AddSprite(
-			spriteNode.attribute("id").as_uint(),
+			spriteNode.attribute("ID").as_uint(),
 			sprite
 		);
 	}
@@ -87,13 +87,13 @@ void CGameObject::Load() {
 			frameNode;
 			frameNode = frameNode.next_sibling("Frame")) {
 			animation->AddFrame(
-				frameNode.attribute("id").as_uint(),
+				frameNode.attribute("ID").as_uint(),
 				frameNode.attribute("time").as_float()
 			);
 		}
 
 		AddAnimation(
-			animationNode.attribute("id").as_uint(),
+			animationNode.attribute("ID").as_uint(),
 			animation
 		);
 	}
@@ -109,18 +109,18 @@ void CGameObject::Load() {
 		);
 
 		AddSound(
-			soundNode.attribute("id").as_uint(),
+			soundNode.attribute("ID").as_uint(),
 			sound
 		);
 	}
 }
 
 void CGameObject::AddSprite(
-	unsigned int id, 
+	unsigned int ID, 
 	pSprite sprite
 ) {
-	if (_sprites.find(id) != _sprites.end()) {
-		DebugOut(L"[Engine] Sprite ID is already existed: %d.\n", id);
+	if (_sprites.find(ID) != _sprites.end()) {
+		DebugOut(L"[Engine] Sprite ID is already existed: %d.\n", ID);
 
 		delete sprite;
 		sprite = nullptr;
@@ -128,15 +128,15 @@ void CGameObject::AddSprite(
 		return;
 	}
 
-	_sprites[id] = sprite;
+	_sprites[ID] = sprite;
 }
 
 void CGameObject::AddAnimation(
-	unsigned int id, 
+	unsigned int ID, 
 	pAnimation animation
 ) {
-	if (_animations.find(id) != _animations.end()) {
-		DebugOut(L"[Engine] Animation ID is already existed: %d.\n", id);
+	if (_animations.find(ID) != _animations.end()) {
+		DebugOut(L"[Engine] Animation ID is already existed: %d.\n", ID);
 
 		delete animation;
 		animation = nullptr;
@@ -144,15 +144,15 @@ void CGameObject::AddAnimation(
 		return;
 	}
 
-	_animations[id] = animation;
+	_animations[ID] = animation;
 }
 
 void CGameObject::AddSound(
-	unsigned int id,
+	unsigned int ID,
 	pSound sound
 ) {
-	if (_sounds.find(id) != _sounds.end()) {
-		DebugOut(L"[Engine] Sound ID is already existed: %d.\n", id);
+	if (_sounds.find(ID) != _sounds.end()) {
+		DebugOut(L"[Engine] Sound ID is already existed: %d.\n", ID);
 
 		delete sound;
 		sound = nullptr;
@@ -160,5 +160,5 @@ void CGameObject::AddSound(
 		return;
 	}
 
-	_sounds[id] = sound;
+	_sounds[ID] = sound;
 }

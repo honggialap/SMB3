@@ -13,13 +13,13 @@
 #pragma endregion
 
 struct CScene {
-	unsigned int _id;
+	unsigned int _ID;
 	std::string _source;
 	std::vector<unsigned int> _gameObjects;
 	bool _play = false;
 	bool _load = false;
 
-	CScene(unsigned int sceneID, std::string _source);
+	CScene(unsigned int sceneID, std::string source);
 	void Add(unsigned int gameObjectID);
 	void Remove(unsigned int gameObjectID);
 	void Clean();

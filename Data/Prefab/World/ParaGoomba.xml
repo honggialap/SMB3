@@ -1,0 +1,95 @@
+<Prefab>
+  <!--SPRITES-->
+  <!--BBOX-->
+  <Sprite ID="999901" textureID="101" left="0" top="0" width="28" height="28" offsetX="0" offsetY="14"/>
+
+  <!--GOOMBA-->
+  <Sprite ID="110101" textureID="202" left="2"	top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="110102" textureID="202" left="38"	top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="120101" textureID="202" left="2"	top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="120102" textureID="202" left="38"	top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="110201" textureID="202" left="74"	top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--RED GOOMBA-->
+  <Sprite ID="210101" textureID="202" left="2"	top="74" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="210102" textureID="202" left="38"	top="74" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="220101" textureID="202" left="2"	top="110" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="220102" textureID="202" left="38"	top="110" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="210201" textureID="202" left="74"	top="74" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--WING-->
+  <Sprite ID="310101" textureID="202" left="2"	top="146" width="48" height="32" offsetX="0" offsetY="24"/>
+  <Sprite ID="310102" textureID="202" left="54"	top="146" width="48" height="32" offsetX="0" offsetY="24"/>
+
+
+  <!--ANIMATIONS-->
+  <!--GOOMBA-->
+  <Animation ID="1101">
+    <Frame ID="110101" time="100"/>
+    <Frame ID="110102" time="100"/>
+  </Animation>
+  <Animation ID="1201">
+    <Frame ID="120101" time="100"/>
+    <Frame ID="120102" time="100"/>
+  </Animation>
+
+  <!--RED GOOMBA-->
+  <Animation ID="2101">
+    <Frame ID="210101" time="100"/>
+    <Frame ID="210102" time="100"/>
+  </Animation>
+  <Animation ID="2201">
+    <Frame ID="220101" time="100"/>
+    <Frame ID="220102" time="100"/>
+  </Animation>
+
+  <!--WING-->
+  <Animation ID="3101">
+    <Frame ID="310101" time="100"/>
+    <Frame ID="310102" time="100"/>
+  </Animation>
+  <Animation ID="3102">
+    <Frame ID="310101" time="50"/>
+    <Frame ID="310102" time="50"/>
+  </Animation>
+
+  <!--BODY-->
+  <Body render="true" width="28" height="28" offsetX="0" offsetY="14"/>
+
+  <!--STATS-->
+  <Type
+		type						="0"
+		wing						="true"
+		/>
+
+  <Gravity
+		GRAVITY						="0.001"
+		/>
+
+  <Move
+		WALK_SPEED					="0.1"
+		/>
+
+  <Jump
+		SMALL_JUMP_FORCE			="0.1"
+		LARGE_JUMP_FORCE			="0.5"
+		JUMP_INTERVAL				="500"
+		/>
+
+  <Fly
+		TAKE_OFF_SPEED				="0.1"
+		FLY_TIMEOUT					="1000"
+		CHANGE_DIRECTION_COUNTDOWN	="200"
+		TARGET_FLY_OFFSET			="100"
+		/>
+
+  <Hit
+		HORIZONTAL_DEFLECT_FORCE	="0.1"
+		VERTICAL_DEFLECT_FORCE		="0.1"
+		DECAY_TIMEOUT				="200"
+		targetName					="mario"
+		/>
+
+  <MicroGoomba actor="20202" name="micro" source="Data/Prefab/World/MicroGoomba.xml" />
+
+</Prefab>

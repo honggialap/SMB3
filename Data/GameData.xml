@@ -37,21 +37,21 @@
   <Button keyCode ="7"/>
 
   <!-- Textures -->
-  <Texture id="101" source="Data/Texture/BBox.png"/>
-  <Texture id="201" source="Data/Texture/Mario.png"/>
-  <Texture id="202" source="Data/Texture/Goomba.png"/>
-  <Texture id="203" source="Data/Texture/Koopa.png"/>
-  <Texture id="204" source="Data/Texture/Plant.png"/>
-  <Texture id="301" source="Data/Texture/Item.png"/>
-  <Texture id="401" source="Data/Texture/Block.png"/>
-  <Texture id="402" source="Data/Texture/Pipe.png"/>
-  <Texture id="701" source="Data/Texture/Effect.png"/>
+  <Texture ID="101" source="Data/Texture/BBox.png"/>
+  <Texture ID="201" source="Data/Texture/Mario.png"/>
+  <Texture ID="202" source="Data/Texture/Goomba.png"/>
+  <Texture ID="203" source="Data/Texture/Koopa.png"/>
+  <Texture ID="204" source="Data/Texture/Plant.png"/>
+  <Texture ID="301" source="Data/Texture/Item.png"/>
+  <Texture ID="401" source="Data/Texture/Block.png"/>
+  <Texture ID="402" source="Data/Texture/Pipe.png"/>
+  <Texture ID="701" source="Data/Texture/Effect.png"/>
 
   <!-- Scenes -->
-  <Scene id="0" source="Data/Scene/Sandbox.xml"/>
-  <Scene id="101" source="Data/Scene/MainGame.xml"/>
-  <Scene id="201" source="Data/Scene/Title.xml"/>
-  <Scene id="301" source="Data/Scene/WorldMapGrassland.xml"/>
-  <Scene id="401" source="Data/Scene/World11.xml"/>
+  <Scene ID="0" source="Data/Scene/Sandbox.xml"/>
+  <Scene ID="101" source="Data/Scene/MainGame.xml"/>
+  <Scene ID="201" source="Data/Scene/Title.xml"/>
+  <Scene ID="301" source="Data/Scene/WorldMapGrassland.xml"/>
+  <Scene ID="401" source="Data/Scene/World11.xml"/>
 
 </GameData>

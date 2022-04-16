@@ -51,9 +51,9 @@ public:
 	bool Initialize(HWND hWnd);
 	void Shutdown();
 
-	pTexture LoadTextureFromFile(std::wstring sourcePath);
-	void LoadTexture(unsigned int id, std::wstring sourcePath);
-	pTexture GetTexture(unsigned int id);
+	pTexture LoadTextureFromFile(std::wstring source);
+	void LoadTexture(unsigned int ID, std::wstring source);
+	pTexture GetTexture(unsigned int ID);
 };
 typedef CGraphics* pGraphics;
 

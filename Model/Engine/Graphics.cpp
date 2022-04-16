@@ -215,20 +215,20 @@ void CGraphics::Shutdown() {
 }
 
 pTexture CGraphics::LoadTextureFromFile(
-	std::wstring sourcePath
+	std::wstring source
 ) {
 	ID3D10Resource* pD3D10Resource = NULL;
 	ID3D10Texture2D* tex = NULL;
 
 	D3DX10_IMAGE_INFO imageInfo;
 	HRESULT result = D3DX10GetImageInfoFromFile(
-		sourcePath.c_str(),
+		source.c_str(),
 		NULL,
 		&imageInfo,
 		NULL
 	);
 	if (FAILED(result)) {
-		DebugOut(L"[Engine] Texture load failed: %s\n", sourcePath.c_str());
+		DebugOut(L"[Engine] Texture load failed: %s\n", source.c_str());
 		return nullptr;
 	}
 
@@ -250,14 +250,14 @@ pTexture CGraphics::LoadTextureFromFile(
 
 	result = D3DX10CreateTextureFromFile(
 		_device,
-		sourcePath.c_str(),
+		source.c_str(),
 		&info,
 		NULL,
 		&pD3D10Resource,
 		NULL
 	);
 	if (FAILED(result)) {
-		DebugOut(L"[Engine] Texture load failed: %s\n", sourcePath.c_str());
+		DebugOut(L"[Engine] Texture load failed: %s\n", source.c_str());
 		return nullptr;
 	}
 
@@ -267,7 +267,7 @@ pTexture CGraphics::LoadTextureFromFile(
 	);
 	pD3D10Resource->Release();
 	if (!tex) {
-		DebugOut(L"[Engine] Texture load failed: %s\n", sourcePath.c_str());
+		DebugOut(L"[Engine] Texture load failed: %s\n", source.c_str());
 		return nullptr;
 	}
 
@@ -283,38 +283,38 @@ pTexture CGraphics::LoadTextureFromFile(
 	ID3D10ShaderResourceView* gSpriteTextureRV = NULL;
 	result = _device->CreateShaderResourceView(tex, &SRVDesc, &gSpriteTextureRV);
 	if (FAILED(result)) {
-		DebugOut(L"[Engine] Texture load failed: %s\n", sourcePath.c_str());
+		DebugOut(L"[Engine] Texture load failed: %s\n", source.c_str());
 		return nullptr;
 	}
 
-	DebugOut(L"[Engine] Texture loaded: %s\n", sourcePath.c_str());
+	DebugOut(L"[Engine] Texture loaded: %s\n", source.c_str());
 	return new CTexture(tex, gSpriteTextureRV);
 }
 
 void CGraphics::LoadTexture(
-	unsigned int id,
-	std::wstring sourcePath
+	unsigned int ID,
+	std::wstring source
 ) {
-	if (_textures.find(id) != _textures.end()) {
-		DebugOut(L"[Engine] Texture ID is already existed: %d.\n", id);
+	if (_textures.find(ID) != _textures.end()) {
+		DebugOut(L"[Engine] Texture ID is already existed: %d.\n", ID);
 		return;
 	}
 
-	auto texture = LoadTextureFromFile(sourcePath);
+	auto texture = LoadTextureFromFile(source);
 	if (texture == nullptr) {
 		return;
 	}
 
-	_textures[id] = texture;
+	_textures[ID] = texture;
 }
 
 pTexture CGraphics::GetTexture(
-	unsigned int id
+	unsigned int ID
 ) {
-	if (_textures.find(id) == _textures.end()) {
-		DebugOut(L"[Engine] Texture not found: %d\n", id);
+	if (_textures.find(ID) == _textures.end()) {
+		DebugOut(L"[Engine] Texture not found: %d\n", ID);
 		return nullptr;
 	}
 
-	return _textures[id];
+	return _textures[ID];
 }

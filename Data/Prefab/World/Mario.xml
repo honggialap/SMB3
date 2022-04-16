@@ -2,603 +2,603 @@
 
   <!--SPRITES-->
   <!--BBOX-->
-  <Sprite id="999901" textureID="101" left="0" top="0" width="24" height="30" offsetX="0" offsetY="15"/>
-  <Sprite id="999902" textureID="101" left="0" top="0" width="24" height="54" offsetX="0" offsetY="27"/>
+  <Sprite ID="999901" textureID="101" left="0" top="0" width="24" height="30" offsetX="0" offsetY="15"/>
+  <Sprite ID="999902" textureID="101" left="0" top="0" width="24" height="54" offsetX="0" offsetY="27"/>
 
   <!--SMALL - LEFT -->
-  <Sprite id="110101" textureID="201" left="2"	top="2" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="110201" textureID="201" left="38"	top="2" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="110301" textureID="201" left="74"	top="2" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="110401" textureID="201" left="110" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="110402" textureID="201" left="146" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="110501" textureID="201" left="182" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="110601" textureID="201" left="218" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="110701" textureID="201" left="254" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="110801" textureID="201" left="290" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="110901" textureID="201" left="326" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="111001" textureID="201" left="362" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="111101" textureID="201" left="398" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="111102" textureID="201" left="432" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="111103" textureID="201" left="470" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="111104" textureID="201" left="506" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="111201" textureID="201" left="542" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="110101" textureID="201" left="2"	top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="110201" textureID="201" left="38"	top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="110301" textureID="201" left="74"	top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="110401" textureID="201" left="110" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="110402" textureID="201" left="146" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="110501" textureID="201" left="182" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="110601" textureID="201" left="218" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="110701" textureID="201" left="254" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="110801" textureID="201" left="290" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="110901" textureID="201" left="326" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="111001" textureID="201" left="362" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="111101" textureID="201" left="398" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="111102" textureID="201" left="432" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="111103" textureID="201" left="470" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="111104" textureID="201" left="506" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="111201" textureID="201" left="542" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
   <!--SMALL - RIGHT -->
-  <Sprite id="120101" textureID="201" left="2"	top="38" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="120201" textureID="201" left="38"	top="38" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="120301" textureID="201" left="74"	top="38" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="120401" textureID="201" left="110" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="120402" textureID="201" left="146" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="120501" textureID="201" left="182" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="120601" textureID="201" left="218" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="120701" textureID="201" left="254" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="120801" textureID="201" left="290" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="120901" textureID="201" left="326" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="121001" textureID="201" left="362" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="121101" textureID="201" left="398" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="121102" textureID="201" left="432" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="121103" textureID="201" left="470" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="121104" textureID="201" left="506" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="121201" textureID="201" left="542" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="120101" textureID="201" left="2"	top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="120201" textureID="201" left="38"	top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="120301" textureID="201" left="74"	top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="120401" textureID="201" left="110" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="120402" textureID="201" left="146" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="120501" textureID="201" left="182" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="120601" textureID="201" left="218" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="120701" textureID="201" left="254" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="120801" textureID="201" left="290" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="120901" textureID="201" left="326" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="121001" textureID="201" left="362" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="121101" textureID="201" left="398" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="121102" textureID="201" left="432" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="121103" textureID="201" left="470" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="121104" textureID="201" left="506" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="121201" textureID="201" left="542" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
   <!--SMALL - COMMON -->
-  <Sprite id="100101" textureID="201" left="578" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
-  <Sprite id="100201" textureID="201" left="514" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="100101" textureID="201" left="578" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="100201" textureID="201" left="514" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
 
   <!--LARGE - LEFT -->
-  <Sprite id="210101" textureID="201" left="2" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="210201" textureID="201" left="38" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="210202" textureID="201" left="74" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="210301" textureID="201" left="110" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="210401" textureID="201" left="146" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="210501" textureID="201" left="182" top="74" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="210502" textureID="201" left="234" top="74" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="210503" textureID="201" left="286" top="74" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="210601" textureID="201" left="338" top="74" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="210701" textureID="201" left="390" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="210801" textureID="201" left="426" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="210901" textureID="201" left="462" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="210902" textureID="201" left="498" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="211001" textureID="201" left="534" top="74" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="211101" textureID="201" left="586" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="211201" textureID="201" left="622" top="74" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="211202" textureID="201" left="674" top="74" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="211203" textureID="201" left="726" top="74" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="211204" textureID="201" left="778" top="74" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="211301" textureID="201" left="830" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="211401" textureID="201" left="866" top="74" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="211402" textureID="201" left="918" top="74" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="211403" textureID="201" left="970" top="74" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="211404" textureID="201" left="1022" top="74" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="211405" textureID="201" left="1074" top="74" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="211406" textureID="201" left="1126" top="74" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="211407" textureID="201" left="1178" top="74" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="211408" textureID="201" left="1230" top="74" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="211501" textureID="201" left="1282" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="210101" textureID="201" left="2" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="210201" textureID="201" left="38" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="210202" textureID="201" left="74" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="210301" textureID="201" left="110" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="210401" textureID="201" left="146" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="210501" textureID="201" left="182" top="74" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="210502" textureID="201" left="234" top="74" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="210503" textureID="201" left="286" top="74" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="210601" textureID="201" left="338" top="74" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="210701" textureID="201" left="390" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="210801" textureID="201" left="426" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="210901" textureID="201" left="462" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="210902" textureID="201" left="498" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="211001" textureID="201" left="534" top="74" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="211101" textureID="201" left="586" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="211201" textureID="201" left="622" top="74" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="211202" textureID="201" left="674" top="74" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="211203" textureID="201" left="726" top="74" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="211204" textureID="201" left="778" top="74" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="211301" textureID="201" left="830" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="211401" textureID="201" left="866" top="74" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="211402" textureID="201" left="918" top="74" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="211403" textureID="201" left="970" top="74" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="211404" textureID="201" left="1022" top="74" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="211405" textureID="201" left="1074" top="74" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="211406" textureID="201" left="1126" top="74" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="211407" textureID="201" left="1178" top="74" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="211408" textureID="201" left="1230" top="74" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="211501" textureID="201" left="1282" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
   <!--LARGE - RIGHT -->
-  <Sprite id="220101" textureID="201" left="2" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="220201" textureID="201" left="38" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="220202" textureID="201" left="74" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="220301" textureID="201" left="110" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="220401" textureID="201" left="146" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="220501" textureID="201" left="182" top="142" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="220502" textureID="201" left="234" top="142" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="220503" textureID="201" left="286" top="142" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="220601" textureID="201" left="338" top="142" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="220701" textureID="201" left="390" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="220801" textureID="201" left="426" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="220901" textureID="201" left="462" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="220902" textureID="201" left="498" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="221001" textureID="201" left="534" top="142" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="221101" textureID="201" left="586" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="221201" textureID="201" left="622" top="142" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="221202" textureID="201" left="674" top="142" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="221203" textureID="201" left="726" top="142" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="221204" textureID="201" left="778" top="142" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="221301" textureID="201" left="830" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="221401" textureID="201" left="866" top="142" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="221402" textureID="201" left="918" top="142" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="221403" textureID="201" left="970" top="142" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="221404" textureID="201" left="1022" top="142" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="221405" textureID="201" left="1074" top="142" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="221406" textureID="201" left="1126" top="142" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="221407" textureID="201" left="1178" top="142" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="221408" textureID="201" left="1230" top="142" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="221501" textureID="201" left="1282" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="220101" textureID="201" left="2" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="220201" textureID="201" left="38" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="220202" textureID="201" left="74" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="220301" textureID="201" left="110" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="220401" textureID="201" left="146" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="220501" textureID="201" left="182" top="142" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="220502" textureID="201" left="234" top="142" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="220503" textureID="201" left="286" top="142" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="220601" textureID="201" left="338" top="142" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="220701" textureID="201" left="390" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="220801" textureID="201" left="426" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="220901" textureID="201" left="462" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="220902" textureID="201" left="498" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="221001" textureID="201" left="534" top="142" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="221101" textureID="201" left="586" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="221201" textureID="201" left="622" top="142" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="221202" textureID="201" left="674" top="142" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="221203" textureID="201" left="726" top="142" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="221204" textureID="201" left="778" top="142" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="221301" textureID="201" left="830" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="221401" textureID="201" left="866" top="142" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="221402" textureID="201" left="918" top="142" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="221403" textureID="201" left="970" top="142" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="221404" textureID="201" left="1022" top="142" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="221405" textureID="201" left="1074" top="142" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="221406" textureID="201" left="1126" top="142" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="221407" textureID="201" left="1178" top="142" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="221408" textureID="201" left="1230" top="142" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="221501" textureID="201" left="1282" top="142" width="32" height="64" offsetX="0" offsetY="32"/>
   <!--LARGE - COMMON -->
-  <Sprite id="200101" textureID="201" left="1318" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="200102" textureID="201" left="1354" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="200201" textureID="201" left="1390" top="74" width="48" height="64" offsetX="0" offsetY="16"/>
-  <Sprite id="200301" textureID="201" left="1442" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="200101" textureID="201" left="1318" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="200102" textureID="201" left="1354" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="200201" textureID="201" left="1390" top="74" width="48" height="64" offsetX="0" offsetY="16"/>
+  <Sprite ID="200301" textureID="201" left="1442" top="74" width="32" height="64" offsetX="0" offsetY="32"/>
 
   <!--FIRE - LEFT -->
-  <Sprite id="310101" textureID="201" left="2" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="310201" textureID="201" left="38" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="310202" textureID="201" left="74" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="310301" textureID="201" left="110" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="310401" textureID="201" left="146" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="310501" textureID="201" left="182" top="210" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="310502" textureID="201" left="234" top="210" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="310503" textureID="201" left="286" top="210" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="310601" textureID="201" left="338" top="210" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="310701" textureID="201" left="390" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="310801" textureID="201" left="426" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="310901" textureID="201" left="462" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="310902" textureID="201" left="498" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="311001" textureID="201" left="534" top="210" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="311101" textureID="201" left="586" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="311201" textureID="201" left="622" top="210" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="311202" textureID="201" left="674" top="210" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="311203" textureID="201" left="726" top="210" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="311204" textureID="201" left="778" top="210" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="311301" textureID="201" left="830" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="311401" textureID="201" left="866" top="210" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="311402" textureID="201" left="918" top="210" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="311403" textureID="201" left="970" top="210" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="311404" textureID="201" left="1022" top="210" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="311405" textureID="201" left="1074" top="210" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="311406" textureID="201" left="1126" top="210" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="311407" textureID="201" left="1178" top="210" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="311408" textureID="201" left="1230" top="210" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="311501" textureID="201" left="1282" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="311502" textureID="201" left="1318" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="310101" textureID="201" left="2" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="310201" textureID="201" left="38" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="310202" textureID="201" left="74" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="310301" textureID="201" left="110" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="310401" textureID="201" left="146" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="310501" textureID="201" left="182" top="210" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="310502" textureID="201" left="234" top="210" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="310503" textureID="201" left="286" top="210" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="310601" textureID="201" left="338" top="210" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="310701" textureID="201" left="390" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="310801" textureID="201" left="426" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="310901" textureID="201" left="462" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="310902" textureID="201" left="498" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="311001" textureID="201" left="534" top="210" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="311101" textureID="201" left="586" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="311201" textureID="201" left="622" top="210" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="311202" textureID="201" left="674" top="210" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="311203" textureID="201" left="726" top="210" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="311204" textureID="201" left="778" top="210" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="311301" textureID="201" left="830" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="311401" textureID="201" left="866" top="210" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="311402" textureID="201" left="918" top="210" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="311403" textureID="201" left="970" top="210" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="311404" textureID="201" left="1022" top="210" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="311405" textureID="201" left="1074" top="210" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="311406" textureID="201" left="1126" top="210" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="311407" textureID="201" left="1178" top="210" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="311408" textureID="201" left="1230" top="210" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="311501" textureID="201" left="1282" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="311502" textureID="201" left="1318" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
   <!--FIRE - RIGHT -->
-  <Sprite id="320101" textureID="201" left="2" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="320201" textureID="201" left="38" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="320202" textureID="201" left="74" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="320301" textureID="201" left="110" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="320401" textureID="201" left="146" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="320501" textureID="201" left="182" top="278" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="320502" textureID="201" left="234" top="278" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="320503" textureID="201" left="286" top="278" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="320601" textureID="201" left="338" top="278" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="320701" textureID="201" left="390" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="320801" textureID="201" left="426" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="320901" textureID="201" left="462" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="320902" textureID="201" left="498" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="321001" textureID="201" left="534" top="278" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="321101" textureID="201" left="586" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="321201" textureID="201" left="622" top="278" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="321202" textureID="201" left="674" top="278" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="321203" textureID="201" left="726" top="278" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="321204" textureID="201" left="778" top="278" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="321301" textureID="201" left="830" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="321401" textureID="201" left="866" top="278" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="321402" textureID="201" left="918" top="278" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="321403" textureID="201" left="970" top="278" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="321404" textureID="201" left="1022" top="278" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="321405" textureID="201" left="1074" top="278" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="321406" textureID="201" left="1126" top="278" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="321407" textureID="201" left="1178" top="278" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="321408" textureID="201" left="1230" top="278" width="48" height="64" offsetX="0" offsetY="20"/>
-  <Sprite id="321501" textureID="201" left="1282" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="321502" textureID="201" left="1318" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="320101" textureID="201" left="2" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="320201" textureID="201" left="38" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="320202" textureID="201" left="74" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="320301" textureID="201" left="110" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="320401" textureID="201" left="146" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="320501" textureID="201" left="182" top="278" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="320502" textureID="201" left="234" top="278" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="320503" textureID="201" left="286" top="278" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="320601" textureID="201" left="338" top="278" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="320701" textureID="201" left="390" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="320801" textureID="201" left="426" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="320901" textureID="201" left="462" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="320902" textureID="201" left="498" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="321001" textureID="201" left="534" top="278" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="321101" textureID="201" left="586" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="321201" textureID="201" left="622" top="278" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="321202" textureID="201" left="674" top="278" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="321203" textureID="201" left="726" top="278" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="321204" textureID="201" left="778" top="278" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="321301" textureID="201" left="830" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="321401" textureID="201" left="866" top="278" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="321402" textureID="201" left="918" top="278" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="321403" textureID="201" left="970" top="278" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="321404" textureID="201" left="1022" top="278" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="321405" textureID="201" left="1074" top="278" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="321406" textureID="201" left="1126" top="278" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="321407" textureID="201" left="1178" top="278" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="321408" textureID="201" left="1230" top="278" width="48" height="64" offsetX="0" offsetY="20"/>
+  <Sprite ID="321501" textureID="201" left="1282" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="321502" textureID="201" left="1318" top="278" width="32" height="64" offsetX="0" offsetY="32"/>
   <!--FIRE - COMMON -->
-  <Sprite id="300101" textureID="201" left="1354" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="300102" textureID="201" left="1390" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="300101" textureID="201" left="1354" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="300102" textureID="201" left="1390" top="210" width="32" height="64" offsetX="0" offsetY="32"/>
 
   <!--RACCOON - LEFT -->
-  <Sprite id="410101" textureID="201" left="2" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="410201" textureID="201" left="54" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="410202" textureID="201" left="106" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="410301" textureID="201" left="158" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="410401" textureID="201" left="210" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="410501" textureID="201" left="262" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="410502" textureID="201" left="314" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="410601" textureID="201" left="366" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="410602" textureID="201" left="418" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="410603" textureID="201" left="470" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="410701" textureID="201" left="522" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="410702" textureID="201" left="574" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="410703" textureID="201" left="626" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="410801" textureID="201" left="678" top="346" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="410901" textureID="201" left="714" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="411001" textureID="201" left="766" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="411002" textureID="201" left="818" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="411101" textureID="201" left="870" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="411201" textureID="201" left="922" top="346" width="32" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="411301" textureID="201" left="958" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="411302" textureID="201" left="1010" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="411303" textureID="201" left="1062" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="411304" textureID="201" left="1114" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="411401" textureID="201" left="1166" top="346" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="411501" textureID="201" left="1202" top="346" width="48" height="64" offsetX="0" offsetY="16"/>
-  <Sprite id="411502" textureID="201" left="1254" top="346" width="48" height="64" offsetX="0" offsetY="16"/>
-  <Sprite id="411503" textureID="201" left="1306" top="346" width="48" height="64" offsetX="0" offsetY="16"/>
-  <Sprite id="411504" textureID="201" left="1358" top="346" width="48" height="64" offsetX="0" offsetY="16"/>
-  <Sprite id="411505" textureID="201" left="1410" top="346" width="48" height="64" offsetX="0" offsetY="16"/>
-  <Sprite id="411506" textureID="201" left="1462" top="346" width="48" height="64" offsetX="0" offsetY="16"/>
-  <Sprite id="411507" textureID="201" left="1514" top="346" width="48" height="64" offsetX="0" offsetY="16"/>
-  <Sprite id="411508" textureID="201" left="1566" top="346" width="48" height="64" offsetX="0" offsetY="16"/>
+  <Sprite ID="410101" textureID="201" left="2" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="410201" textureID="201" left="54" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="410202" textureID="201" left="106" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="410301" textureID="201" left="158" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="410401" textureID="201" left="210" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="410501" textureID="201" left="262" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="410502" textureID="201" left="314" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="410601" textureID="201" left="366" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="410602" textureID="201" left="418" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="410603" textureID="201" left="470" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="410701" textureID="201" left="522" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="410702" textureID="201" left="574" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="410703" textureID="201" left="626" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="410801" textureID="201" left="678" top="346" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="410901" textureID="201" left="714" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="411001" textureID="201" left="766" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="411002" textureID="201" left="818" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="411101" textureID="201" left="870" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="411201" textureID="201" left="922" top="346" width="32" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="411301" textureID="201" left="958" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="411302" textureID="201" left="1010" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="411303" textureID="201" left="1062" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="411304" textureID="201" left="1114" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="411401" textureID="201" left="1166" top="346" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="411501" textureID="201" left="1202" top="346" width="48" height="64" offsetX="0" offsetY="16"/>
+  <Sprite ID="411502" textureID="201" left="1254" top="346" width="48" height="64" offsetX="0" offsetY="16"/>
+  <Sprite ID="411503" textureID="201" left="1306" top="346" width="48" height="64" offsetX="0" offsetY="16"/>
+  <Sprite ID="411504" textureID="201" left="1358" top="346" width="48" height="64" offsetX="0" offsetY="16"/>
+  <Sprite ID="411505" textureID="201" left="1410" top="346" width="48" height="64" offsetX="0" offsetY="16"/>
+  <Sprite ID="411506" textureID="201" left="1462" top="346" width="48" height="64" offsetX="0" offsetY="16"/>
+  <Sprite ID="411507" textureID="201" left="1514" top="346" width="48" height="64" offsetX="0" offsetY="16"/>
+  <Sprite ID="411508" textureID="201" left="1566" top="346" width="48" height="64" offsetX="0" offsetY="16"/>
   <!--RACCOON - RIGHT -->
-  <Sprite id="420101" textureID="201" left="2" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="420201" textureID="201" left="54" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="420202" textureID="201" left="106" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="420301" textureID="201" left="158" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="420401" textureID="201" left="210" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="420501" textureID="201" left="262" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="420502" textureID="201" left="314" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="420601" textureID="201" left="366" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="420602" textureID="201" left="418" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="420603" textureID="201" left="470" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="420701" textureID="201" left="522" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="420702" textureID="201" left="574" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="420703" textureID="201" left="626" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="420801" textureID="201" left="678" top="414" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="420901" textureID="201" left="714" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="421001" textureID="201" left="766" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="421002" textureID="201" left="818" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="421101" textureID="201" left="870" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="421201" textureID="201" left="922" top="414" width="32" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="421301" textureID="201" left="958" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="421302" textureID="201" left="1010" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="421303" textureID="201" left="1062" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="421304" textureID="201" left="1114" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
-  <Sprite id="421401" textureID="201" left="1166" top="414" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="421501" textureID="201" left="1202" top="414" width="48" height="64" offsetX="0" offsetY="16"/>
-  <Sprite id="421502" textureID="201" left="1254" top="414" width="48" height="64" offsetX="0" offsetY="16"/>
-  <Sprite id="421503" textureID="201" left="1306" top="414" width="48" height="64" offsetX="0" offsetY="16"/>
-  <Sprite id="421504" textureID="201" left="1358" top="414" width="48" height="64" offsetX="0" offsetY="16"/>
-  <Sprite id="421505" textureID="201" left="1410" top="414" width="48" height="64" offsetX="0" offsetY="16"/>
-  <Sprite id="421506" textureID="201" left="1462" top="414" width="48" height="64" offsetX="0" offsetY="16"/>
-  <Sprite id="421507" textureID="201" left="1514" top="414" width="48" height="64" offsetX="0" offsetY="16"/>
-  <Sprite id="421508" textureID="201" left="1566" top="414" width="48" height="64" offsetX="0" offsetY="16"/>
+  <Sprite ID="420101" textureID="201" left="2" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="420201" textureID="201" left="54" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="420202" textureID="201" left="106" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="420301" textureID="201" left="158" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="420401" textureID="201" left="210" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="420501" textureID="201" left="262" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="420502" textureID="201" left="314" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="420601" textureID="201" left="366" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="420602" textureID="201" left="418" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="420603" textureID="201" left="470" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="420701" textureID="201" left="522" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="420702" textureID="201" left="574" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="420703" textureID="201" left="626" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="420801" textureID="201" left="678" top="414" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="420901" textureID="201" left="714" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="421001" textureID="201" left="766" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="421002" textureID="201" left="818" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="421101" textureID="201" left="870" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="421201" textureID="201" left="922" top="414" width="32" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="421301" textureID="201" left="958" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="421302" textureID="201" left="1010" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="421303" textureID="201" left="1062" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="421304" textureID="201" left="1114" top="414" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="421401" textureID="201" left="1166" top="414" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="421501" textureID="201" left="1202" top="414" width="48" height="64" offsetX="0" offsetY="16"/>
+  <Sprite ID="421502" textureID="201" left="1254" top="414" width="48" height="64" offsetX="0" offsetY="16"/>
+  <Sprite ID="421503" textureID="201" left="1306" top="414" width="48" height="64" offsetX="0" offsetY="16"/>
+  <Sprite ID="421504" textureID="201" left="1358" top="414" width="48" height="64" offsetX="0" offsetY="16"/>
+  <Sprite ID="421505" textureID="201" left="1410" top="414" width="48" height="64" offsetX="0" offsetY="16"/>
+  <Sprite ID="421506" textureID="201" left="1462" top="414" width="48" height="64" offsetX="0" offsetY="16"/>
+  <Sprite ID="421507" textureID="201" left="1514" top="414" width="48" height="64" offsetX="0" offsetY="16"/>
+  <Sprite ID="421508" textureID="201" left="1566" top="414" width="48" height="64" offsetX="0" offsetY="16"/>
   <!--RACCOON - COMMON -->
-  <Sprite id="400101" textureID="201" left="1618" top="346" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="400102" textureID="201" left="1654" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
-  <Sprite id="400103" textureID="201" left="1706" top="346" width="32" height="64" offsetX="0" offsetY="32"/>
-  <Sprite id="400104" textureID="201" left="1742" top="346" width="48" height="64" offsetX="-8" offsetY="32"/>
+  <Sprite ID="400101" textureID="201" left="1618" top="346" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="400102" textureID="201" left="1654" top="346" width="48" height="64" offsetX="8" offsetY="32"/>
+  <Sprite ID="400103" textureID="201" left="1706" top="346" width="32" height="64" offsetX="0" offsetY="32"/>
+  <Sprite ID="400104" textureID="201" left="1742" top="346" width="48" height="64" offsetX="-8" offsetY="32"/>
 
   <!--EFFECT-->
-  <Sprite id="510101" textureID="201" left="802" top="2" width="32" height="32" offsetX="0" offsetY="24"/>
-  <Sprite id="510102" textureID="201" left="838" top="2" width="32" height="32" offsetX="0" offsetY="24"/>
-  <Sprite id="510103" textureID="201" left="874" top="2" width="32" height="32" offsetX="0" offsetY="24"/>
-  <Sprite id="510104" textureID="201" left="910" top="2" width="32" height="32" offsetX="0" offsetY="24"/>
-  <Sprite id="520101" textureID="201" left="802" top="38" width="32" height="32" offsetX="0" offsetY="24"/>
-  <Sprite id="520102" textureID="201" left="838" top="38" width="32" height="32" offsetX="0" offsetY="24"/>
-  <Sprite id="520103" textureID="201" left="874" top="38" width="32" height="32" offsetX="0" offsetY="24"/>
-  <Sprite id="520104" textureID="201" left="910" top="38" width="32" height="32" offsetX="0" offsetY="24"/>
+  <Sprite ID="510101" textureID="701" left="154" top="2" width="32" height="32" offsetX="0" offsetY="24"/>
+  <Sprite ID="510102" textureID="701" left="190" top="2" width="32" height="32" offsetX="0" offsetY="24"/>
+  <Sprite ID="510103" textureID="701" left="226" top="2" width="32" height="32" offsetX="0" offsetY="24"/>
+  <Sprite ID="510104" textureID="701" left="262" top="2" width="32" height="32" offsetX="0" offsetY="24"/>
+  <Sprite ID="520101" textureID="701" left="154" top="38" width="32" height="32" offsetX="0" offsetY="24"/>
+  <Sprite ID="520102" textureID="701" left="190" top="38" width="32" height="32" offsetX="0" offsetY="24"/>
+  <Sprite ID="520103" textureID="701" left="226" top="38" width="32" height="32" offsetX="0" offsetY="24"/>
+  <Sprite ID="520104" textureID="701" left="262" top="38" width="32" height="32" offsetX="0" offsetY="24"/>
 
   <!--SMALL - LEFT -->
-  <Animation id="1101">
-    <Frame id="110101" time="100"/>
-    <Frame id="110201" time="100"/>
+  <Animation ID="1101">
+    <Frame ID="110101" time="100"/>
+    <Frame ID="110201" time="100"/>
   </Animation>
-  <Animation id="1102">
-    <Frame id="110401" time="100"/>
-    <Frame id="110402" time="100"/>
+  <Animation ID="1102">
+    <Frame ID="110401" time="100"/>
+    <Frame ID="110402" time="100"/>
   </Animation>
-  <Animation id="1103">
-    <Frame id="110701" time="100"/>
-    <Frame id="110801" time="100"/>
+  <Animation ID="1103">
+    <Frame ID="110701" time="100"/>
+    <Frame ID="110801" time="100"/>
   </Animation>
-  <Animation id="1104">
-    <Frame id="111101" time="50"/>
-    <Frame id="111102" time="50"/>
-    <Frame id="111103" time="50"/>
-    <Frame id="111104" time="50"/>
+  <Animation ID="1104">
+    <Frame ID="111101" time="50"/>
+    <Frame ID="111102" time="50"/>
+    <Frame ID="111103" time="50"/>
+    <Frame ID="111104" time="50"/>
   </Animation>
 
   <!--SMALL - RIGHT -->
-  <Animation id="1201">
-    <Frame id="120101" time="100"/>
-    <Frame id="120201" time="100"/>
+  <Animation ID="1201">
+    <Frame ID="120101" time="100"/>
+    <Frame ID="120201" time="100"/>
   </Animation>
-  <Animation id="1202">
-    <Frame id="120401" time="100"/>
-    <Frame id="120402" time="100"/>
+  <Animation ID="1202">
+    <Frame ID="120401" time="100"/>
+    <Frame ID="120402" time="100"/>
   </Animation>
-  <Animation id="1203">
-    <Frame id="120701" time="100"/>
-    <Frame id="120801" time="100"/>
+  <Animation ID="1203">
+    <Frame ID="120701" time="100"/>
+    <Frame ID="120801" time="100"/>
   </Animation>
-  <Animation id="1204">
-    <Frame id="121101" time="50"/>
-    <Frame id="121102" time="50"/>
-    <Frame id="121103" time="50"/>
-    <Frame id="121104" time="50"/>
+  <Animation ID="1204">
+    <Frame ID="121101" time="50"/>
+    <Frame ID="121102" time="50"/>
+    <Frame ID="121103" time="50"/>
+    <Frame ID="121104" time="50"/>
   </Animation>
 
   <!--LARGE - LEFT -->
-  <Animation id="2101">
-    <Frame id="210101" time="50"/>
-    <Frame id="210201" time="50"/>
-    <Frame id="210202" time="50"/>
-    <Frame id="210201" time="50"/>
+  <Animation ID="2101">
+    <Frame ID="210101" time="50"/>
+    <Frame ID="210201" time="50"/>
+    <Frame ID="210202" time="50"/>
+    <Frame ID="210201" time="50"/>
   </Animation>
-  <Animation id="2102">
-    <Frame id="210501" time="50"/>
-    <Frame id="210502" time="50"/>
-    <Frame id="210503" time="50"/>
-    <Frame id="210502" time="50"/>
+  <Animation ID="2102">
+    <Frame ID="210501" time="50"/>
+    <Frame ID="210502" time="50"/>
+    <Frame ID="210503" time="50"/>
+    <Frame ID="210502" time="50"/>
   </Animation>
-  <Animation id="2103">
-    <Frame id="210801" time="50"/>
-    <Frame id="210901" time="50"/>
-    <Frame id="210902" time="50"/>
-    <Frame id="210901" time="50"/>
+  <Animation ID="2103">
+    <Frame ID="210801" time="50"/>
+    <Frame ID="210901" time="50"/>
+    <Frame ID="210902" time="50"/>
+    <Frame ID="210901" time="50"/>
   </Animation>
-  <Animation id="2104">
-    <Frame id="211201" time="50"/>
-    <Frame id="211202" time="50"/>
-    <Frame id="211203" time="50"/>
-    <Frame id="211204" time="50"/>
+  <Animation ID="2104">
+    <Frame ID="211201" time="50"/>
+    <Frame ID="211202" time="50"/>
+    <Frame ID="211203" time="50"/>
+    <Frame ID="211204" time="50"/>
   </Animation>
-  <Animation id="2105">
-    <Frame id="211401" time="25"/>
-    <Frame id="211402" time="25"/>
-    <Frame id="211403" time="25"/>
-    <Frame id="211404" time="25"/>
-    <Frame id="211405" time="25"/>
-    <Frame id="211406" time="25"/>
-    <Frame id="211407" time="25"/>
-    <Frame id="211408" time="25"/>
+  <Animation ID="2105">
+    <Frame ID="211401" time="25"/>
+    <Frame ID="211402" time="25"/>
+    <Frame ID="211403" time="25"/>
+    <Frame ID="211404" time="25"/>
+    <Frame ID="211405" time="25"/>
+    <Frame ID="211406" time="25"/>
+    <Frame ID="211407" time="25"/>
+    <Frame ID="211408" time="25"/>
   </Animation>
 
   <!--LARGE - RIGHT -->
-  <Animation id="2201">
-    <Frame id="220101" time="50"/>
-    <Frame id="220201" time="50"/>
-    <Frame id="220202" time="50"/>
-    <Frame id="220201" time="50"/>
+  <Animation ID="2201">
+    <Frame ID="220101" time="50"/>
+    <Frame ID="220201" time="50"/>
+    <Frame ID="220202" time="50"/>
+    <Frame ID="220201" time="50"/>
   </Animation>
-  <Animation id="2202">
-    <Frame id="220501" time="50"/>
-    <Frame id="220502" time="50"/>
-    <Frame id="220503" time="50"/>
-    <Frame id="220502" time="50"/>
+  <Animation ID="2202">
+    <Frame ID="220501" time="50"/>
+    <Frame ID="220502" time="50"/>
+    <Frame ID="220503" time="50"/>
+    <Frame ID="220502" time="50"/>
   </Animation>
-  <Animation id="2203">
-    <Frame id="220801" time="50"/>
-    <Frame id="220901" time="50"/>
-    <Frame id="220902" time="50"/>
-    <Frame id="220901" time="50"/>
+  <Animation ID="2203">
+    <Frame ID="220801" time="50"/>
+    <Frame ID="220901" time="50"/>
+    <Frame ID="220902" time="50"/>
+    <Frame ID="220901" time="50"/>
   </Animation>
-  <Animation id="2204">
-    <Frame id="221201" time="50"/>
-    <Frame id="221202" time="50"/>
-    <Frame id="221203" time="50"/>
-    <Frame id="221204" time="50"/>
+  <Animation ID="2204">
+    <Frame ID="221201" time="50"/>
+    <Frame ID="221202" time="50"/>
+    <Frame ID="221203" time="50"/>
+    <Frame ID="221204" time="50"/>
   </Animation>
-  <Animation id="2205">
-    <Frame id="221401" time="25"/>
-    <Frame id="221402" time="25"/>
-    <Frame id="221403" time="25"/>
-    <Frame id="221404" time="25"/>
-    <Frame id="221405" time="25"/>
-    <Frame id="221406" time="25"/>
-    <Frame id="221407" time="25"/>
-    <Frame id="221408" time="25"/>
+  <Animation ID="2205">
+    <Frame ID="221401" time="25"/>
+    <Frame ID="221402" time="25"/>
+    <Frame ID="221403" time="25"/>
+    <Frame ID="221404" time="25"/>
+    <Frame ID="221405" time="25"/>
+    <Frame ID="221406" time="25"/>
+    <Frame ID="221407" time="25"/>
+    <Frame ID="221408" time="25"/>
   </Animation>
 
   <!--FIRE - LEFT -->
-  <Animation id="3101">
-    <Frame id="310101" time="50"/>
-    <Frame id="310201" time="50"/>
-    <Frame id="310202" time="50"/>
-    <Frame id="310201" time="50"/>
+  <Animation ID="3101">
+    <Frame ID="310101" time="50"/>
+    <Frame ID="310201" time="50"/>
+    <Frame ID="310202" time="50"/>
+    <Frame ID="310201" time="50"/>
   </Animation>
-  <Animation id="3102">
-    <Frame id="310501" time="50"/>
-    <Frame id="310502" time="50"/>
-    <Frame id="310503" time="50"/>
-    <Frame id="310502" time="50"/>
+  <Animation ID="3102">
+    <Frame ID="310501" time="50"/>
+    <Frame ID="310502" time="50"/>
+    <Frame ID="310503" time="50"/>
+    <Frame ID="310502" time="50"/>
   </Animation>
-  <Animation id="3103">
-    <Frame id="310801" time="50"/>
-    <Frame id="310901" time="50"/>
-    <Frame id="310902" time="50"/>
-    <Frame id="310901" time="50"/>
+  <Animation ID="3103">
+    <Frame ID="310801" time="50"/>
+    <Frame ID="310901" time="50"/>
+    <Frame ID="310902" time="50"/>
+    <Frame ID="310901" time="50"/>
   </Animation>
-  <Animation id="3104">
-    <Frame id="311201" time="50"/>
-    <Frame id="311202" time="50"/>
-    <Frame id="311203" time="50"/>
-    <Frame id="311204" time="50"/>
+  <Animation ID="3104">
+    <Frame ID="311201" time="50"/>
+    <Frame ID="311202" time="50"/>
+    <Frame ID="311203" time="50"/>
+    <Frame ID="311204" time="50"/>
   </Animation>
-  <Animation id="3105">
-    <Frame id="311401" time="25"/>
-    <Frame id="311402" time="25"/>
-    <Frame id="311403" time="25"/>
-    <Frame id="311404" time="25"/>
-    <Frame id="311405" time="25"/>
-    <Frame id="311406" time="25"/>
-    <Frame id="311407" time="25"/>
-    <Frame id="311408" time="25"/>
+  <Animation ID="3105">
+    <Frame ID="311401" time="25"/>
+    <Frame ID="311402" time="25"/>
+    <Frame ID="311403" time="25"/>
+    <Frame ID="311404" time="25"/>
+    <Frame ID="311405" time="25"/>
+    <Frame ID="311406" time="25"/>
+    <Frame ID="311407" time="25"/>
+    <Frame ID="311408" time="25"/>
   </Animation>
-  <Animation id="3106">
-    <Frame id="311501" time="100"/>
-    <Frame id="311502" time="100"/>
+  <Animation ID="3106">
+    <Frame ID="311501" time="100"/>
+    <Frame ID="311502" time="100"/>
   </Animation>
-  <Animation id="3107">
-    <Frame id="310601" time="100"/>
-    <Frame id="311204" time="100"/>
+  <Animation ID="3107">
+    <Frame ID="310601" time="100"/>
+    <Frame ID="311204" time="100"/>
   </Animation>
 
   <!--FIRE - RIGHT -->
-  <Animation id="3201">
-    <Frame id="320101" time="50"/>
-    <Frame id="320201" time="50"/>
-    <Frame id="320202" time="50"/>
-    <Frame id="320201" time="50"/>
+  <Animation ID="3201">
+    <Frame ID="320101" time="50"/>
+    <Frame ID="320201" time="50"/>
+    <Frame ID="320202" time="50"/>
+    <Frame ID="320201" time="50"/>
   </Animation>
-  <Animation id="3202">
-    <Frame id="320501" time="50"/>
-    <Frame id="320502" time="50"/>
-    <Frame id="320503" time="50"/>
-    <Frame id="320502" time="50"/>
+  <Animation ID="3202">
+    <Frame ID="320501" time="50"/>
+    <Frame ID="320502" time="50"/>
+    <Frame ID="320503" time="50"/>
+    <Frame ID="320502" time="50"/>
   </Animation>
-  <Animation id="3203">
-    <Frame id="320801" time="50"/>
-    <Frame id="320901" time="50"/>
-    <Frame id="320902" time="50"/>
-    <Frame id="320901" time="50"/>
+  <Animation ID="3203">
+    <Frame ID="320801" time="50"/>
+    <Frame ID="320901" time="50"/>
+    <Frame ID="320902" time="50"/>
+    <Frame ID="320901" time="50"/>
   </Animation>
-  <Animation id="3204">
-    <Frame id="321201" time="50"/>
-    <Frame id="321202" time="50"/>
-    <Frame id="321203" time="50"/>
-    <Frame id="321204" time="50"/>
+  <Animation ID="3204">
+    <Frame ID="321201" time="50"/>
+    <Frame ID="321202" time="50"/>
+    <Frame ID="321203" time="50"/>
+    <Frame ID="321204" time="50"/>
   </Animation>
-  <Animation id="3205">
-    <Frame id="321401" time="25"/>
-    <Frame id="321402" time="25"/>
-    <Frame id="321403" time="25"/>
-    <Frame id="321404" time="25"/>
-    <Frame id="321405" time="25"/>
-    <Frame id="321406" time="25"/>
-    <Frame id="321407" time="25"/>
-    <Frame id="321408" time="25"/>
+  <Animation ID="3205">
+    <Frame ID="321401" time="25"/>
+    <Frame ID="321402" time="25"/>
+    <Frame ID="321403" time="25"/>
+    <Frame ID="321404" time="25"/>
+    <Frame ID="321405" time="25"/>
+    <Frame ID="321406" time="25"/>
+    <Frame ID="321407" time="25"/>
+    <Frame ID="321408" time="25"/>
   </Animation>
-  <Animation id="3206">
-    <Frame id="321501" time="100"/>
-    <Frame id="321502" time="100"/>
+  <Animation ID="3206">
+    <Frame ID="321501" time="100"/>
+    <Frame ID="321502" time="100"/>
   </Animation>
-  <Animation id="3207">
-    <Frame id="320601" time="100"/>
-    <Frame id="321204" time="100"/>
+  <Animation ID="3207">
+    <Frame ID="320601" time="100"/>
+    <Frame ID="321204" time="100"/>
   </Animation>
 
   <!--RACCOON - LEFT -->
-  <Animation id="4101">
-    <Frame id="410101" time="50"/>
-    <Frame id="410201" time="50"/>
-    <Frame id="410202" time="50"/>
-    <Frame id="410201" time="50"/>
+  <Animation ID="4101">
+    <Frame ID="410101" time="50"/>
+    <Frame ID="410201" time="50"/>
+    <Frame ID="410202" time="50"/>
+    <Frame ID="410201" time="50"/>
   </Animation>
-  <Animation id="4102">
-    <Frame id="410501" time="100"/>
-    <Frame id="410502" time="100"/>
+  <Animation ID="4102">
+    <Frame ID="410501" time="100"/>
+    <Frame ID="410502" time="100"/>
   </Animation>
-  <Animation id="4103">
-    <Frame id="410601" time="50"/>
-    <Frame id="410602" time="50"/>
-    <Frame id="410603" time="50"/>
-    <Frame id="410602" time="50"/>
+  <Animation ID="4103">
+    <Frame ID="410601" time="50"/>
+    <Frame ID="410602" time="50"/>
+    <Frame ID="410603" time="50"/>
+    <Frame ID="410602" time="50"/>
   </Animation>
-  <Animation id="4104">
-    <Frame id="410701" time="50"/>
-    <Frame id="410702" time="50"/>
-    <Frame id="410703" time="50"/>
-    <Frame id="410702" time="50"/>
+  <Animation ID="4104">
+    <Frame ID="410701" time="50"/>
+    <Frame ID="410702" time="50"/>
+    <Frame ID="410703" time="50"/>
+    <Frame ID="410702" time="50"/>
   </Animation>
-  <Animation id="4105">
-    <Frame id="410901" time="50"/>
-    <Frame id="411001" time="50"/>
-    <Frame id="411002" time="50"/>
-    <Frame id="411001" time="50"/>
+  <Animation ID="4105">
+    <Frame ID="410901" time="50"/>
+    <Frame ID="411001" time="50"/>
+    <Frame ID="411002" time="50"/>
+    <Frame ID="411001" time="50"/>
   </Animation>
-  <Animation id="4106">
-    <Frame id="411301" time="50"/>
-    <Frame id="411302" time="50"/>
-    <Frame id="411303" time="50"/>
-    <Frame id="411304" time="50"/>
+  <Animation ID="4106">
+    <Frame ID="411301" time="50"/>
+    <Frame ID="411302" time="50"/>
+    <Frame ID="411303" time="50"/>
+    <Frame ID="411304" time="50"/>
   </Animation>
-  <Animation id="4107">
-    <Frame id="411501" time="25"/>
-    <Frame id="411502" time="25"/>
-    <Frame id="411503" time="25"/>
-    <Frame id="411504" time="25"/>
-    <Frame id="411505" time="25"/>
-    <Frame id="411506" time="25"/>
-    <Frame id="411507" time="25"/>
-    <Frame id="411508" time="25"/>
+  <Animation ID="4107">
+    <Frame ID="411501" time="25"/>
+    <Frame ID="411502" time="25"/>
+    <Frame ID="411503" time="25"/>
+    <Frame ID="411504" time="25"/>
+    <Frame ID="411505" time="25"/>
+    <Frame ID="411506" time="25"/>
+    <Frame ID="411507" time="25"/>
+    <Frame ID="411508" time="25"/>
   </Animation>
-  <Animation id="4108">
-    <Frame id="400102" time="50"/>
-    <Frame id="400101" time="50"/>
-    <Frame id="400104" time="50"/>
-    <Frame id="400103" time="50"/>
+  <Animation ID="4108">
+    <Frame ID="400102" time="50"/>
+    <Frame ID="400101" time="50"/>
+    <Frame ID="400104" time="50"/>
+    <Frame ID="400103" time="50"/>
   </Animation>
 
   <!--RACCOON - RIGHT -->
-  <Animation id="4201">
-    <Frame id="420101" time="50"/>
-    <Frame id="420201" time="50"/>
-    <Frame id="420202" time="50"/>
-    <Frame id="420201" time="50"/>
+  <Animation ID="4201">
+    <Frame ID="420101" time="50"/>
+    <Frame ID="420201" time="50"/>
+    <Frame ID="420202" time="50"/>
+    <Frame ID="420201" time="50"/>
   </Animation>
-  <Animation id="4202">
-    <Frame id="420501" time="100"/>
-    <Frame id="420502" time="100"/>
+  <Animation ID="4202">
+    <Frame ID="420501" time="100"/>
+    <Frame ID="420502" time="100"/>
   </Animation>
-  <Animation id="4203">
-    <Frame id="420601" time="50"/>
-    <Frame id="420602" time="50"/>
-    <Frame id="420603" time="50"/>
-    <Frame id="420602" time="50"/>
+  <Animation ID="4203">
+    <Frame ID="420601" time="50"/>
+    <Frame ID="420602" time="50"/>
+    <Frame ID="420603" time="50"/>
+    <Frame ID="420602" time="50"/>
   </Animation>
-  <Animation id="4204">
-    <Frame id="420701" time="50"/>
-    <Frame id="420702" time="50"/>
-    <Frame id="420703" time="50"/>
-    <Frame id="420702" time="50"/>
+  <Animation ID="4204">
+    <Frame ID="420701" time="50"/>
+    <Frame ID="420702" time="50"/>
+    <Frame ID="420703" time="50"/>
+    <Frame ID="420702" time="50"/>
   </Animation>
-  <Animation id="4205">
-    <Frame id="420901" time="50"/>
-    <Frame id="421001" time="50"/>
-    <Frame id="421002" time="50"/>
-    <Frame id="421001" time="50"/>
+  <Animation ID="4205">
+    <Frame ID="420901" time="50"/>
+    <Frame ID="421001" time="50"/>
+    <Frame ID="421002" time="50"/>
+    <Frame ID="421001" time="50"/>
   </Animation>
-  <Animation id="4206">
-    <Frame id="421301" time="50"/>
-    <Frame id="421302" time="50"/>
-    <Frame id="421303" time="50"/>
-    <Frame id="421304" time="50"/>
+  <Animation ID="4206">
+    <Frame ID="421301" time="50"/>
+    <Frame ID="421302" time="50"/>
+    <Frame ID="421303" time="50"/>
+    <Frame ID="421304" time="50"/>
   </Animation>
-  <Animation id="4207">
-    <Frame id="421501" time="25"/>
-    <Frame id="421502" time="25"/>
-    <Frame id="421503" time="25"/>
-    <Frame id="421504" time="25"/>
-    <Frame id="421505" time="25"/>
-    <Frame id="421506" time="25"/>
-    <Frame id="421507" time="25"/>
-    <Frame id="421508" time="25"/>
+  <Animation ID="4207">
+    <Frame ID="421501" time="25"/>
+    <Frame ID="421502" time="25"/>
+    <Frame ID="421503" time="25"/>
+    <Frame ID="421504" time="25"/>
+    <Frame ID="421505" time="25"/>
+    <Frame ID="421506" time="25"/>
+    <Frame ID="421507" time="25"/>
+    <Frame ID="421508" time="25"/>
   </Animation>
-  <Animation id="4208">
-    <Frame id="400104" time="50"/>
-    <Frame id="400101" time="50"/>
-    <Frame id="400102" time="50"/>
-    <Frame id="400103" time="50"/>
+  <Animation ID="4208">
+    <Frame ID="400104" time="50"/>
+    <Frame ID="400101" time="50"/>
+    <Frame ID="400102" time="50"/>
+    <Frame ID="400103" time="50"/>
   </Animation>
 
   <!--TRANFORMATION - LEFT -->
-  <Animation id="5101">
-    <Frame id="211501" time="50"/>
-    <Frame id="210101" time="50"/>
-    <Frame id="211501" time="50"/>
-    <Frame id="110101" time="50"/>
+  <Animation ID="5101">
+    <Frame ID="211501" time="50"/>
+    <Frame ID="210101" time="50"/>
+    <Frame ID="211501" time="50"/>
+    <Frame ID="110101" time="50"/>
   </Animation>
-  <Animation id="5102">
-    <Frame id="211501" time="50"/>
-    <Frame id="110101" time="50"/>
-    <Frame id="211501" time="50"/>
-    <Frame id="210101" time="50"/>
+  <Animation ID="5102">
+    <Frame ID="211501" time="50"/>
+    <Frame ID="110101" time="50"/>
+    <Frame ID="211501" time="50"/>
+    <Frame ID="210101" time="50"/>
   </Animation>
-  <Animation id="5103">
-    <Frame id="510101" time="50"/>
-    <Frame id="510102" time="50"/>
-    <Frame id="510103" time="50"/>
-    <Frame id="510104" time="50"/>
+  <Animation ID="5103">
+    <Frame ID="510101" time="50"/>
+    <Frame ID="510102" time="50"/>
+    <Frame ID="510103" time="50"/>
+    <Frame ID="510104" time="50"/>
   </Animation>
 
   <!--TRANFORMATION - RIGHT -->
-  <Animation id="5201">
-    <Frame id="221501" time="50"/>
-    <Frame id="220101" time="50"/>
-    <Frame id="221501" time="50"/>
-    <Frame id="120101" time="50"/>
+  <Animation ID="5201">
+    <Frame ID="221501" time="50"/>
+    <Frame ID="220101" time="50"/>
+    <Frame ID="221501" time="50"/>
+    <Frame ID="120101" time="50"/>
   </Animation>
-  <Animation id="5202">
-    <Frame id="221501" time="50"/>
-    <Frame id="120101" time="50"/>
-    <Frame id="221501" time="50"/>
-    <Frame id="220101" time="50"/>
+  <Animation ID="5202">
+    <Frame ID="221501" time="50"/>
+    <Frame ID="120101" time="50"/>
+    <Frame ID="221501" time="50"/>
+    <Frame ID="220101" time="50"/>
   </Animation>
-  <Animation id="5203">
-    <Frame id="520101" time="50"/>
-    <Frame id="520102" time="50"/>
-    <Frame id="520103" time="50"/>
-    <Frame id="520104" time="50"/>
+  <Animation ID="5203">
+    <Frame ID="520101" time="50"/>
+    <Frame ID="520102" time="50"/>
+    <Frame ID="520103" time="50"/>
+    <Frame ID="520104" time="50"/>
   </Animation>
 
   <SmallBody render="true" width="24" height="30" offsetX="0" offsetY="15"/>

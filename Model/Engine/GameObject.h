@@ -21,7 +21,7 @@ class CGameObject {
 protected:
 	pGame _game = nullptr;
 	pScene _scene = nullptr;
-	unsigned int _id = 0;
+	unsigned int _ID = 0;
 	std::string _name;
 	std::string _source;
 
@@ -47,7 +47,7 @@ protected:
 public:
 	CGameObject(
 		pGame game, pScene scene,
-		unsigned int id, std::string name, std::string source,
+		unsigned int ID, std::string name, std::string source,
 		float x, float y,
 		int gx, int gy,
 		unsigned int layer
@@ -56,7 +56,7 @@ public:
 
 	pGame GetGame() { return _game; }
 	pScene GetScene() { return _scene; }
-	unsigned int GetId() { return _id; }
+	unsigned int GetID() { return _ID; }
 	std::string GetName() { return _name; }
 
 	bool IsDestroyed() { return _destroy; }

@@ -24,7 +24,7 @@ public:
 	CAnimation(pGameObject gameObject);
 	~CAnimation();
 
-	void AddFrame(unsigned int spriteId, float frameTime);
+	void AddFrame(unsigned int spriteID, float frameTime);
 
 	void Play(bool loop = false);
 	void Stop();

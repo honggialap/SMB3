@@ -16,11 +16,11 @@ CAnimation::~CAnimation() {
 }
 
 void CAnimation::AddFrame(
-	unsigned int spriteId,
+	unsigned int spriteID,
 	float frameTime
 ) {
 	_frames.push_back(
-		std::make_pair(spriteId, frameTime)
+		std::make_pair(spriteID, frameTime)
 	);
 }
 

@@ -33,7 +33,7 @@ public:
 
 	bool Initialize(HWND hWnd);
 	void Shutdown();
-	bool LoadSoundFromFile(LPDIRECTSOUNDBUFFER8 secondaryBuffer, std::string sourcePath);
+	bool LoadSoundFromFile(LPDIRECTSOUNDBUFFER8 secondaryBuffer, std::string source);
 };
 typedef CAudio* pAudio;
 

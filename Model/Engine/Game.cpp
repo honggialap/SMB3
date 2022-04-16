@@ -6,7 +6,7 @@ CScene::CScene(
 	unsigned int sceneID,
 	std::string source
 ) {
-	_id = sceneID;
+	_ID = sceneID;
 	_source = source;
 }
 
@@ -14,7 +14,7 @@ void CScene::Add(
 	unsigned int gameObjectID
 ) {
 	if (std::find(_gameObjects.begin(), _gameObjects.end(), gameObjectID) != _gameObjects.end()) {
-		DebugOut(L"[Engine] GameObject with id %d already added to scene.\n", gameObjectID);
+		DebugOut(L"[Engine] GameObject with ID %d already added to scene.\n", gameObjectID);
 		return;
 	}
 
@@ -25,7 +25,7 @@ void CScene::Remove(
 	unsigned int gameObjectID
 ) {
 	if (std::find(_gameObjects.begin(), _gameObjects.end(), gameObjectID) == _gameObjects.end()) {
-		DebugOut(L"[Engine] GameObject with id %d not existed in scene.\n", gameObjectID);
+		DebugOut(L"[Engine] GameObject with ID %d not existed in scene.\n", gameObjectID);
 		return;
 	}
 
@@ -159,7 +159,7 @@ void CGame::LoadScene(
 		gameObjectNode = gameObjectNode.next_sibling("GameObject")) {
 		Create(
 			scene,
-			gameObjectNode.attribute("actor").as_uint(),
+			gameObjectNode.attribute("actorID").as_uint(),
 			gameObjectNode.attribute("name").as_string(),
 			gameObjectNode.attribute("source").as_string(),
 			gameObjectNode.attribute("x").as_float(),
@@ -185,7 +185,7 @@ void CGame::PlayScene(
 	unsigned int sceneID
 ) {
 	if (_scenes.find(sceneID) == _scenes.end()) {
-		DebugOut(L"[Engine] Scene id non existed: %d.\n", sceneID);
+		DebugOut(L"[Engine] Scene ID non existed: %d.\n", sceneID);
 		return;
 	}
 
@@ -198,7 +198,7 @@ void CGame::StopScene(
 	unsigned int sceneID
 ) {
 	if (_scenes.find(sceneID) == _scenes.end()) {
-		DebugOut(L"[Engine] Scene id non exist: %d.\n", sceneID);
+		DebugOut(L"[Engine] Scene ID non exist: %d.\n", sceneID);
 		return;
 	}
 
@@ -232,11 +232,11 @@ void CGame::Purge() {
 void CGame::AddGameObject(
 	pGameObject gameObject
 ) {
-	_gameObjects[gameObject->GetId()] = gameObject;
-	_dictionary[gameObject->GetName()] = gameObject->GetId();
+	_gameObjects[gameObject->GetID()] = gameObject;
+	_dictionary[gameObject->GetName()] = gameObject->GetID();
 
-	AddGrid(gameObject->GetId());
-	gameObject->GetScene()->Add(gameObject->GetId());
+	AddGrid(gameObject->GetID());
+	gameObject->GetScene()->Add(gameObject->GetID());
 }
 
 pGameObject CGame::GetGameObject(
@@ -504,7 +504,7 @@ bool CGame::Load(
 		textureNode;
 		textureNode = textureNode.next_sibling("Texture")) {
 		_graphics->LoadTexture(
-			textureNode.attribute("id").as_uint(),
+			textureNode.attribute("ID").as_uint(),
 			std::wstring_convert<std::codecvt_utf8<wchar_t>>().from_bytes(
 				textureNode.attribute("source").as_string()
 			)
@@ -515,7 +515,7 @@ bool CGame::Load(
 		sceneNode;
 		sceneNode = sceneNode.next_sibling("Scene")) {
 		AddScene(
-			sceneNode.attribute("id").as_uint(),
+			sceneNode.attribute("ID").as_uint(),
 			sceneNode.attribute("source").as_string()
 		);
 	}

@@ -117,7 +117,7 @@ void CMario::Update(
 	UpdateFlyTimeout(elapsedMs);
 	UpdateInvincible(elapsedMs);
 
-	std::vector<pGameObject> collidables = _game->GetLocal(_id);
+	std::vector<pGameObject> collidables = _game->GetLocal(_ID);
 	_collider->Process(elapsedMs, &collidables);
 
 	HandleAction(elapsedMs);
