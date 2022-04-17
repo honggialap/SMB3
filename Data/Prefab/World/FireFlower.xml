@@ -1,0 +1,17 @@
+<Prefab>
+  <!--BBOX-->
+  <Sprite ID="999901" textureID="101" left="0" top="0" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--FIRE FLOWER-->
+  <Sprite ID="100101" textureID="301" left="74" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--BODY-->
+  <Body render="true" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--STATS-->
+  <Spawn
+		SPAWN_SPEED		= "0.1"
+		SPAWN_LIMIT		= "32"
+		/>
+
+</Prefab>

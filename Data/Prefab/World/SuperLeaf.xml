@@ -1,0 +1,22 @@
+<Prefab>
+  <!--BBOX-->
+  <Sprite ID="999901" textureID="101" left="0" top="0" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--SUPER LEAF-->
+  <Sprite ID="100101" textureID="301" left="110" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="100102" textureID="301" left="146" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--BODY-->
+  <Body render="true" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--STATS-->
+  <Move
+		DROP_SPEED		= "0.075"
+		MOVE_SPEED		= "0.085"
+		MOVE_LIMIT		= "64"
+		SPAWN_SPEED		= "0.1"
+		SPAWN_LIMIT		= "32"
+		targetName		= "mario"
+		/>
+
+</Prefab>
