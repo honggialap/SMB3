@@ -1,0 +1,103 @@
+<Prefab>
+  <!--SPRITES-->
+  <!--BBOX-->
+  <Sprite ID="999901" textureID="101" left="0" top="0" width="32" height="64" offsetX="0" offsetY="0"/>
+
+  <!--PLANT-->
+  <Sprite ID="110101" textureID="204" left="2"	top="2" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="110102" textureID="204" left="38"	top="2" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="120101" textureID="204" left="74"	top="2" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="120102" textureID="204" left="110" top="2" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="130101" textureID="204" left="146" top="2" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="130102" textureID="204" left="182" top="2" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="140101" textureID="204" left="218" top="2" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="140102" textureID="204" left="254" top="2" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="150101" textureID="204" left="290" top="2" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="150102" textureID="204" left="326" top="2" width="32" height="64" offsetX="0" offsetY="0"/>
+
+  <Sprite ID="210101" textureID="204" left="2"	top="70" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="210102" textureID="204" left="38"	top="70" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="230101" textureID="204" left="74"	top="70" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="230102" textureID="204" left="110" top="70" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="220101" textureID="204" left="146" top="70" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="220102" textureID="204" left="182" top="70" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="250101" textureID="204" left="218" top="70" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="250102" textureID="204" left="254" top="70" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="240101" textureID="204" left="290" top="70" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="240102" textureID="204" left="326" top="70" width="32" height="64" offsetX="0" offsetY="0"/>
+
+  <!--RED PLANT-->
+  <Sprite ID="310101" textureID="204" left="2"	top="138" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="310102" textureID="204" left="38"	top="138" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="320101" textureID="204" left="74"	top="138" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="320102" textureID="204" left="110" top="138" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="330101" textureID="204" left="146" top="138" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="330102" textureID="204" left="182" top="138" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="340101" textureID="204" left="218" top="138" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="340102" textureID="204" left="254" top="138" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="350101" textureID="204" left="290" top="138" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="350102" textureID="204" left="326" top="138" width="32" height="64" offsetX="0" offsetY="0"/>
+
+  <Sprite ID="410101" textureID="204" left="2"	top="206" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="410102" textureID="204" left="38"	top="206" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="430101" textureID="204" left="74"	top="206" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="430102" textureID="204" left="110" top="206" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="420101" textureID="204" left="146" top="206" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="420102" textureID="204" left="182" top="206" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="450101" textureID="204" left="218" top="206" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="450102" textureID="204" left="254" top="206" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="440101" textureID="204" left="290" top="206" width="32" height="64" offsetX="0" offsetY="0"/>
+  <Sprite ID="440102" textureID="204" left="326" top="206" width="32" height="64" offsetX="0" offsetY="0"/>
+
+  <!--ANIMATION-->
+  <!--PLANT-->
+  <Animation ID="1101">
+    <Frame ID="110101" time="50"/>
+    <Frame ID="110102" time="50"/>
+  </Animation>
+  <Animation ID="2101">
+    <Frame ID="210101" time="50"/>
+    <Frame ID="210102" time="50"/>
+  </Animation>
+
+  <!--RED PLANT-->
+  <Animation ID="3101">
+    <Frame ID="310101" time="50"/>
+    <Frame ID="310102" time="50"/>
+  </Animation>
+  <Animation ID="4101">
+    <Frame ID="410101" time="50"/>
+    <Frame ID="410102" time="50"/>
+  </Animation>
+
+  <!--BODY-->
+  <Body render="true" width="32" height="64" offsetX="0" offsetY="0"/>
+
+  <!--STATS-->
+  <Type
+		plant ="0"
+		type ="1"
+		up ="true"
+		/>
+
+  <Sensor actorID="20402" name="sensor" source="Data/Prefab/World/PlantSensor.xml"/>
+
+  <Grow
+		GROW_LIMIT ="48"
+		GROW_SPEED ="0.1"
+		STAND_INTERVAL ="2000"
+		HIDE_INTERVAL ="2000"
+		/>
+
+  <Shoot
+		SHOOT_OFFSETY ="32"
+		SHOOT_INTERVAL ="500"
+		SHOOT_HORIZONTAL_SPEED ="0"
+		SHOOT_VERTICAL_SPEED ="0"
+		targetName ="mario"
+		/>
+
+  <Fireball actorID="20403" name="fireball1" source="Data/Prefab/World/PlantFireball.xml"/>
+  <Fireball actorID="20403" name="fireball2" source="Data/Prefab/World/PlantFireball.xml"/>
+
+</Prefab>

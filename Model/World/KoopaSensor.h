@@ -15,9 +15,9 @@ class CKoopaSensor : public CGameObject {
 public:
 	CKoopaSensor(
 		pGame game, pScene scene,
-		unsigned int id, std::string name, std::string source,
+		unsigned int ID, std::string name, std::string source,
 		float x, float y, int gx, int gy, unsigned int layer
-	) : CGameObject(game, scene, id, name, source, x, y, gx, gy, layer) {};
+	) : CGameObject(game, scene, ID, name, source, x, y, gx, gy, layer) {};
 
 public:
 	virtual void Load();

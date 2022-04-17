@@ -1,0 +1,39 @@
+<Prefab>
+  <!--SPRITES-->
+  <!--BBOX-->
+  <Sprite ID="999901" textureID="0" left="0" top="0" width="8" height="8" offsetX="0" offsetY="0"/>
+
+  <!--FIREBALL-->
+  <Sprite ID="110101" textureID="1004" left="0" top="0" width="8" height="8" offsetX="0" offsetY="0"/>
+  <Sprite ID="110102" textureID="1004" left="0" top="0" width="8" height="8" offsetX="0" offsetY="0"/>
+  <Sprite ID="110103" textureID="1004" left="0" top="0" width="8" height="8" offsetX="0" offsetY="0"/>
+  <Sprite ID="110104" textureID="1004" left="0" top="0" width="8" height="8" offsetX="0" offsetY="0"/>
+
+  <Sprite ID="120101" textureID="1004" left="0" top="0" width="8" height="8" offsetX="0" offsetY="0"/>
+  <Sprite ID="120102" textureID="1004" left="0" top="0" width="8" height="8" offsetX="0" offsetY="0"/>
+  <Sprite ID="120103" textureID="1004" left="0" top="0" width="8" height="8" offsetX="0" offsetY="0"/>
+  <Sprite ID="120104" textureID="1004" left="0" top="0" width="8" height="8" offsetX="0" offsetY="0"/>
+
+  <!--ANIMATION-->
+  <Animation ID="1101">
+    <Frame ID="110101" time="50"/>
+    <Frame ID="110102" time="50"/>
+    <Frame ID="110103" time="50"/>
+    <Frame ID="110104" time="50"/>
+  </Animation>
+  <Animation ID="1201">
+    <Frame ID="120101" time="50"/>
+    <Frame ID="120102" time="50"/>
+    <Frame ID="120103" time="50"/>
+    <Frame ID="120104" time="50"/>
+  </Animation>
+
+  <!--BODY-->
+  <Body render="true" width="8" height="8" offsetX="0" offsetY="0"/>
+
+  <!--STATS-->
+  <LifeSpan
+		DECAY_INTERVAL ="1000"
+		/>
+
+</Prefab>

@@ -11,6 +11,15 @@
   <GameObject actorID="20301" name="redKoopa" source="Data/Prefab/World/RedKoopa.xml" x="500" y="200" gx="0" gy="0" layer="10"/>
   <GameObject actorID="20301" name="redParaKoopa" source="Data/Prefab/World/RedParaKoopa.xml" x="100" y="100" gx="0" gy="0" layer="10"/>
 
+  <GameObject actorID="20401" name="piranhaUp" source="Data/Prefab/World/PiranhaUp.xml" x="200" y="200" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="20401" name="piranhaDown" source="Data/Prefab/World/PiranhaDown.xml" x="300" y="200" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="20401" name="redPiranhaUp" source="Data/Prefab/World/RedPiranhaUp.xml" x="400" y="200" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="20401" name="redPiranhaDown" source="Data/Prefab/World/RedPiranhaDown.xml" x="500" y="200" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="20401" name="venusUp" source="Data/Prefab/World/VenusUp.xml" x="600" y="200" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="20401" name="venusDown" source="Data/Prefab/World/VenusDown.xml" x="700" y="200" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="20401" name="redVenusUp" source="Data/Prefab/World/RedVenusUp.xml" x="800" y="200" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="20401" name="redVenusDown" source="Data/Prefab/World/RedVenusDown.xml" x="900" y="200" gx="0" gy="0" layer="10"/>
+
   <GameObject actorID="40101" name="platform1" source="Data/Prefab/World/PlatformSolid16x1.xml" x="0" y="0" gx="0" gy="0" layer="10"/>
   <GameObject actorID="40101" name="platform2" source="Data/Prefab/World/PlatformSolid16x1.xml" x="512" y="0" gx="0" gy="0" layer="10"/>
   <GameObject actorID="40101" name="platform3" source="Data/Prefab/World/PlatformHollow16x1.xml" x="512" y="100" gx="0" gy="0" layer="10"/>
