@@ -198,6 +198,7 @@
     <Xml Include="Data\GameData.xml" />
     <Xml Include="Data\Prefab\GameMaster.xml" />
     <Xml Include="Data\Prefab\WorldMap\WorldMap.xml" />
+    <Xml Include="Data\Prefab\World\BrickRelayBlock.xml" />
     <Xml Include="Data\Prefab\World\Goomba.xml" />
     <Xml Include="Data\Prefab\World\Koopa.xml" />
     <Xml Include="Data\Prefab\World\KoopaSensor.xml" />

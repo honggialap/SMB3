@@ -1,0 +1,28 @@
+<Prefab>
+  <!--BBOX-->
+  <Sprite ID="999901" textureID="101" left="0" top="0" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--BRICK-->
+  <Sprite ID="100101" textureID="401" left="2" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="100102" textureID="401" left="38" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="100103" textureID="401" left="74" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="100104" textureID="401" left="110" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--BLOCK-->
+  <Animation ID="1001">
+    <Frame ID="100101" time="100"/>
+    <Frame ID="100102" time="100"/>
+    <Frame ID="100103" time="100"/>
+    <Frame ID="100104" time="100"/>
+  </Animation>
+
+  <!--BODY-->
+  <Body render="true" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--BOUNCE-->
+  <Bounce
+		BOUNCE_LIMIT		="16"
+		BOUNCE_SPEED		="0.25"
+		/>
+
+</Prefab>

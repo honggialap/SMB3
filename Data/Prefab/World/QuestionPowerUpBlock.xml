@@ -1,0 +1,59 @@
+<Prefab>
+  <!--BBOX-->
+  <Sprite ID="999901" textureID="101" left="0" top="0" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--BLOCK-->
+  <Sprite ID="100101" textureID="401" left="2" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="100102" textureID="401" left="38" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="100103" textureID="401" left="74" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="100104" textureID="401" left="110" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--BRICK-->
+  <Sprite ID="100201" textureID="401" left="2" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="100202" textureID="401" left="38" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="100203" textureID="401" left="74" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="100204" textureID="401" left="110" top="38" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--EMPTY-->
+  <Sprite ID="100301" textureID="401" left="110" top="146" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--BLOCK-->
+  <Animation ID="1001">
+    <Frame ID="100101" time="100"/>
+    <Frame ID="100102" time="100"/>
+    <Frame ID="100103" time="100"/>
+    <Frame ID="100104" time="100"/>
+  </Animation>
+  <Animation ID="1002">
+    <Frame ID="100201" time="100"/>
+    <Frame ID="100202" time="100"/>
+    <Frame ID="100203" time="100"/>
+    <Frame ID="100204" time="100"/>
+  </Animation>
+
+  <!--BODY-->
+  <Body render="true" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--Type-->
+  <Type
+		type				="0"
+		spawn				="1"
+		spawnCount			="1"
+		/>
+
+  <!--BOUNCE-->
+  <Bounce
+		BOUNCE_LIMIT		="16"
+		BOUNCE_SPEED		="0.25"
+		target				="mario"
+		/>
+
+  <!--SPAWNABLE-->
+  <Coin actorID ="30101" name="coin" source="Data/Prefab/World/Coin.xml"/>
+  <SuperMushroom actorID ="30201" name="superMushroom" source="Data/Prefab/World/SuperMushroom.xml"/>
+  <SuperLeaf actorID ="30401" name="superLeaf" source="Data/Prefab/World/SuperLeaf.xml"/>
+  <FireFlower actorID ="30301" name="fireFlower" source="Data/Prefab/World/FireFlower.xml"/>
+  <ExtraLifeMushroom actorID ="30501" name="extraLifeMushroom" source="Data/Prefab/World/ExtraLifeMushroom.xml"/>
+  <Relay actorID ="40501" name="relay" source="Data/Prefab/World/Relay.xml"/>
+
+</Prefab>

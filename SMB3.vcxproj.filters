@@ -477,6 +477,9 @@
     <Xml Include="Data\Prefab\World\World11SpawnZone2.xml">
       <Filter>Actor\Prop\SpawnZone</Filter>
     </Xml>
+    <Xml Include="Data\Prefab\World\BrickRelayBlock.xml">
+      <Filter>Actor\Prop\Block</Filter>
+    </Xml>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Model\SMB3.h" />

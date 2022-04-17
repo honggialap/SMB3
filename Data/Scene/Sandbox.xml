@@ -27,10 +27,23 @@
   <GameObject actorID="30101" name="coin5" source="Data/Prefab/World/Coin.xml" x="600" y="200" gx="0" gy="0" layer="10"/>
 
   <GameObject actorID="30201" name="superMushroom" source="Data/Prefab/World/SuperMushroom.xml" x="100" y="100" gx="0" gy="0" layer="10"/>
-	<GameObject actorID="30301" name="fireFlower" source="Data/Prefab/World/FireFlower.xml" x="200" y="100" gx="0" gy="0" layer="10"/>
-	<GameObject actorID="30401" name="superLeaf" source="Data/Prefab/World/SuperLeaf.xml" x="300" y="100" gx="0" gy="0" layer="10"/>
-	<GameObject actorID="30501" name="extraLifeMushroom" source="Data/Prefab/World/ExtraLifeMushroom.xml" x="400" y="100" gx="0" gy="0" layer="10"/>
-  
+  <GameObject actorID="30301" name="fireFlower" source="Data/Prefab/World/FireFlower.xml" x="200" y="100" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="30401" name="superLeaf" source="Data/Prefab/World/SuperLeaf.xml" x="300" y="100" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="30501" name="extraLifeMushroom" source="Data/Prefab/World/ExtraLifeMushroom.xml" x="400" y="100" gx="0" gy="0" layer="10"/>
+
+  <GameObject actorID="40201" name="brickExtraLifeBlock" source="Data/Prefab/World/BrickExtraLifeBlock.xml" x="200" y="100" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="40201" name="brickRelayBlock" source="Data/Prefab/World/BrickRelayBlock.xml" x="300" y="100" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="40201" name="brickMultipleCoinBlock" source="Data/Prefab/World/BrickMultipleCoinBlock.xml" x="400" y="100" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="40201" name="questionCoinBlock" source="Data/Prefab/World/QuestionCoinBlock.xml" x="500" y="100" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="40201" name="questionPowerUpBlock" source="Data/Prefab/World/QuestionPowerUpBlock.xml" x="600" y="100" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="40201" name="questionFireFlowerBlock" source="Data/Prefab/World/QuestionFireFlowerBlock.xml" x="700" y="100" gx="0" gy="0" layer="10"/>
+
+  <GameObject actorID="40301" name="brick1" source="Data/Prefab/World/Brick.xml" x="100" y="200" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="40301" name="brick2" source="Data/Prefab/World/Brick.xml" x="200" y="200" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="40301" name="brick3" source="Data/Prefab/World/Brick.xml" x="300" y="200" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="40301" name="brick4" source="Data/Prefab/World/Brick.xml" x="400" y="200" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="40301" name="brick5" source="Data/Prefab/World/Brick.xml" x="500" y="200" gx="0" gy="0" layer="10"/>
+
   <GameObject actorID="40101" name="platform1" source="Data/Prefab/World/PlatformSolid16x1.xml" x="0" y="0" gx="0" gy="0" layer="10"/>
   <GameObject actorID="40101" name="platform2" source="Data/Prefab/World/PlatformSolid16x1.xml" x="512" y="0" gx="0" gy="0" layer="10"/>
   <GameObject actorID="40101" name="platform3" source="Data/Prefab/World/PlatformHollow16x1.xml" x="512" y="100" gx="0" gy="0" layer="10"/>

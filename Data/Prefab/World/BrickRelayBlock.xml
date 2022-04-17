@@ -37,7 +37,7 @@
   <!--Type-->
   <Type
 		type				="0"
-		spawn				="2"
+		spawn				="4"
 		spawnCount			="1"
 		/>
 
