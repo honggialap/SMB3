@@ -1,0 +1,42 @@
+<Prefab>
+  <!--BBOX-->
+  <Sprite ID="999901" textureID="101" left="0" top="0" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--COIN-->
+  <Sprite ID="100101" textureID="301" left="2" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="100102" textureID="301" left="38" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="100103" textureID="301" left="74" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="100104" textureID="301" left="110" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="100105" textureID="301" left="146" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+  <Sprite ID="100106" textureID="301" left="182" top="2" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--COIN-->
+  <Animation ID="1001">
+    <Frame ID="100101" time="100"/>
+    <Frame ID="100102" time="100"/>
+    <Frame ID="100103" time="100"/>
+    <Frame ID="100104" time="100"/>
+    <Frame ID="100105" time="100"/>
+    <Frame ID="100106" time="100"/>
+  </Animation>
+  <Animation ID="1002">
+    <Frame ID="100101" time="50"/>
+    <Frame ID="100102" time="50"/>
+    <Frame ID="100103" time="50"/>
+    <Frame ID="100104" time="50"/>
+    <Frame ID="100105" time="50"/>
+    <Frame ID="100106" time="50"/>
+  </Animation>
+
+  <!--BODY-->
+  <Body render="true" width="32" height="32" offsetX="0" offsetY="16"/>
+
+  <!--STATS-->
+  <Spin
+		GRAVITY			= "0.005"
+		BOUNCE_FORCE	= "1"
+		DECAY_INTERVAL	= "350"
+		spin			= "true"
+		/>
+
+</Prefab>
