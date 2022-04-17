@@ -6,6 +6,10 @@
   <GameObject actorID="20201" name="redGoomba" source="Data/Prefab/World/RedGoomba.xml" x="500" y="100" gx="0" gy="0" layer="10"/>
   <GameObject actorID="20201" name="redParaGoomba" source="Data/Prefab/World/RedParaGoomba.xml" x="600" y="100" gx="0" gy="0" layer="10"/>
 
+  <GameObject actorID="20301" name="koopa" source="Data/Prefab/World/Koopa.xml" x="300" y="200" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="20301" name="paraKoopa" source="Data/Prefab/World/ParaKoopa.xml" x="400" y="200" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="20301" name="redKoopa" source="Data/Prefab/World/RedKoopa.xml" x="500" y="200" gx="0" gy="0" layer="10"/>
+  <GameObject actorID="20301" name="redParaKoopa" source="Data/Prefab/World/RedParaKoopa.xml" x="100" y="100" gx="0" gy="0" layer="10"/>
 
   <GameObject actorID="40101" name="platform1" source="Data/Prefab/World/PlatformSolid16x1.xml" x="0" y="0" gx="0" gy="0" layer="10"/>
   <GameObject actorID="40101" name="platform2" source="Data/Prefab/World/PlatformSolid16x1.xml" x="512" y="0" gx="0" gy="0" layer="10"/>
